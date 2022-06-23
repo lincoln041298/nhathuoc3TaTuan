@@ -1,0 +1,1656 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Nhà Thuốc 3T</title>
+
+  
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="https://unpkg.com/swiper@8/swiper-bundle.min.css" />
+  
+  <link rel="stylesheet" href="./css/bootstrap.min.css" />
+  <link rel="stylesheet" href="./css/jquery.fancybox.min.css" />
+  <link rel="stylesheet" href="./css/style.css" />
+  
+  <script src="./js/jquery.min.js"></script>
+</head>
+
+<body>
+  <header class="header" id="home">
+    <div class="container">
+      <div class="header__logo">
+        <img src="./img/logo/logo.png" alt="logo 3t" />
+      </div>
+      
+      <div class="search for-desktop">
+          <form id="search-form" action="#" class="search-form">
+            <div class="search-form-wrap">
+                <input type="text" class="search__input search__input-main" placeholder="Tìm sản phẩm" />
+                <button class="search__button">
+                  <i class="search__icon fa-solid fa-magnifying-glass"></i>
+                </button>
+            </div>
+            <div class="search-suggest">
+                <div class="search-box search-1">
+                    <div class="search-title">Tìm kiếm nhiều nhất</div>
+                    <ul class="search-links">
+                        <li><a href="#">Panadol</a></li>
+                        <li><a href="#">Vitamin</a></li>
+                        <li><a href="#">Khẩu trang</a></li>
+                        <li><a href="#">Panadol</a></li>
+                        <li><a href="#">SpO2</a></li>
+                        <li><a href="#">Panadol</a></li>
+                        <li><a href="#">Vitamin</a></li>
+                        <li><a href="#">Panadol</a></li>
+                    </ul>    
+                </div>
+                <div class="search-box search-2">
+                    <ul class="search-top">
+                        <li>Thuốc ho</li>
+                        <li>Thuốc cảm cúm</li>
+                        <li>Thuốc bổ</li>
+                        <li>Thuốc đau đầu</li>
+                    </ul>
+                    <div class="search-line"><span>Sản phẩm được tìm nhiều</span></div>
+                    <ul class="search-bottom">
+                        <li>
+                            <div class="search-thumb">
+                                <img alt="" src="img/s1.png" />
+                            </div>
+                            <div class="search-right">
+                                <span class="search-product-subtitle">Thuốc</span>
+                                <span class="search-product-title">Thuốc ho bổ phế Trường Bách Diệp 125 Ml</span>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="search-thumb">
+                                <img alt="" src="img/s2.png" />
+                            </div>
+                            <div class="search-right">
+                                <span class="search-product-subtitle">Thuốc</span>
+                                <span class="search-product-title">Thuốc ho bổ phế Trường Bách Diệp 125 Ml</span>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="search-thumb">
+                                <img alt="" src="img/s3.png" />
+                            </div>
+                            <div class="search-right">
+                                <span class="search-product-subtitle">Thuốc</span>
+                                <span class="search-product-title">Thuốc ho bổ phế Trường Bách Diệp 125 Ml</span>
+                            </div>
+                        </li>
+                    </ul>   
+                    <div class="search-all"><a href="#">Xem tất cả</a></div> 
+                </div>
+            </div>
+          </form>
+      </div>
+
+      <button class="button-accept btn-modal" data-bs-toggle="modal" data-bs-target="#login_form">Đăng nhập</button>
+      
+      <div class="header__otherbutton">
+        <p class="header__otherbutton--img">
+          <img  src="./img/hambergar.png" alt="9 dots" />
+        </p>
+        <div class="header__otherbutton--text">
+          <p>Tra cứu</p>
+          <p>Lịch sử đơn hàng</p>
+          
+          <div class="menu-order">
+            <ul>
+                <li><a href="#">Đơn hàng của tôi</a></li>
+                <li><a href="#">Thoát tài khoản</a></li>
+            </ul>
+          </div>
+          
+        </div>
+        <div class="mini-line"></div>
+        <div class="header__cart">
+          <div class="header__cart--img">
+            <p class="header__cart--icon"> 
+              <img src="./img/svg/cartheader.svg" alt="cart to add" />
+            </p>
+            <span class="circle-tick">3</span>
+          </div>
+
+          <p class="cart-alone">Giỏ hàng</p>
+        </div>
+      </div>
+    </div>
+    
+    <div class="container">
+        <div class="search for-mobile">
+          <form action="#" class="search-form search-form-main">
+            <div class="search-form-wrap search-form-wrap-main">
+                <input type="text" class="search__input" placeholder="Tìm sản phẩm" />
+                <button class="search__button">
+                  <i class="search__icon fa-solid fa-magnifying-glass"></i>
+                </button>
+            </div>
+            <div class="search-suggest">
+                <div class="search-box search-1">
+                    <div class="search-title">Tìm kiếm nhiều nhất</div>
+                    <ul class="search-links">
+                        <li><a href="#">Panadol</a></li>
+                        <li><a href="#">Vitamin</a></li>
+                        <li><a href="#">Khẩu trang</a></li>
+                        <li><a href="#">Panadol</a></li>
+                        <li><a href="#">SpO2</a></li>
+                        <li><a href="#">Panadol</a></li>
+                        <li><a href="#">Vitamin</a></li>
+                        <li><a href="#">Panadol</a></li>
+                    </ul>    
+                </div>
+                <div class="search-box search-2">
+                    <ul class="search-top">
+                        <li>Thuốc ho</li>
+                        <li>Thuốc cảm cúm</li>
+                        <li>Thuốc bổ</li>
+                        <li>Thuốc đau đầu</li>
+                    </ul>
+                    <div class="search-line"><span>Sản phẩm được tìm nhiều</span></div>
+                    <ul class="search-bottom">
+                        <li>
+                            <div class="search-thumb">
+                                <img alt="" src="img/s1.png" />
+                            </div>
+                            <div class="search-right">
+                                <span class="search-product-subtitle">Thuốc</span>
+                                <span class="search-product-title">Thuốc ho bổ phế Trường Bách Diệp 125 Ml</span>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="search-thumb">
+                                <img alt="" src="img/s2.png" />
+                            </div>
+                            <div class="search-right">
+                                <span class="search-product-subtitle">Thuốc</span>
+                                <span class="search-product-title">Thuốc ho bổ phế Trường Bách Diệp 125 Ml</span>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="search-thumb">
+                                <img alt="" src="img/s3.png" />
+                            </div>
+                            <div class="search-right">
+                                <span class="search-product-subtitle">Thuốc</span>
+                                <span class="search-product-title">Thuốc ho bổ phế Trường Bách Diệp 125 Ml</span>
+                            </div>
+                        </li>
+                    </ul>
+                    <div class="search-all"><a href="#">Xem tất cả</a></div>     
+                </div>
+            </div>
+          </form>
+          <button class="button-open"><i class=" fa-solid fa-bars"></i></button>
+        </div>
+    </div>
+  
+</header>
+
+<div class="menu-wrap">
+    <div class="container">
+        <div class="main-nav">
+            <ul class="choosen-health">
+                <li>
+                    <a href="#">
+                      <span>Thực phẩm Chức Năng</span>
+                      <img class="dropdown-icon" src="./img/svg/dropdown.svg" alt="dropdown" />
+                    </a>
+                    <div class="sub-menu">
+                        <div class="sub-menu-grid">
+                            <div class="sub-menu-left">
+                                <ul class="menu-title">
+                                    <li class="active">
+                                        <a href="#">
+                                            <img alt="" src="img/svg/sinh-ly.svg" width="40px" height="40px" />
+                                            <span>Sinh lý - Nội tiết tố</span>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#">
+                                            <img alt="" src="img/svg/tim-mach.svg" width="40px" height="40px" />
+                                            <span>Sức khoẻ tim mạch</span>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#">
+                                            <img alt="" src="img/svg/tieu-hoa.svg" width="40px" height="40px" />
+                                            <span>Hỗ trợ tiêu hoá</span>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#">
+                                            <img alt="" src="img/svg/than-kinh.svg" width="40px" height="40px" />
+                                            <span>Thần kinh não</span>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#">
+                                            <img alt="" src="img/svg/hotro-dieu-tri.svg" width="40px" height="40px" />
+                                            <span>Hỗ trợ điều trị</span>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#">
+                                            <img alt="" src="img/svg/tang-cuong-chuc-nang.svg" width="40px" height="40px" />
+                                            <span>Cải thiện tăng cường chức năng</span>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#">
+                                            <img alt="" src="img/svg/thao-duoc.svg" width="40px" height="40px" />
+                                            <span>Thảo dược và thực phẩm tự nhiên</span>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#">
+                                            <img alt="" src="img/svg/lam-dep.svg" width="40px" height="40px" />
+                                            <span>Hỗ trợ làm đẹp</span>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#">
+                                            <img alt="" src="img/svg/vitamin.svg" width="40px" height="40px" />
+                                            <span>Vitamin và khoáng chất</span>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#">
+                                            <img alt="" src="img/svg/dinh-duong.svg" width="40px" height="40px" />
+                                            <span>Dinh dưỡng</span>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="sub-menu-right">
+                                <div class="menu-buttons">
+                                    <div class="nav-btn">
+                                        <div class="btn-item active"><a href="#">Sinh lý nam</a></div>
+                                        <div class="btn-item"><a href="#">Sinh lý nữ</a></div>
+                                        <div class="btn-item"><a href="#">Hỗ trợ mãn kinh</a></div>
+                                        <div class="btn-item"><a href="#">Cân bằng nội tiết tố</a></div>
+                                        <div class="btn-item"><a href="#">Sức khoẻ tình dục</a></div>
+                                        <div class="btn-item"><a href="#">Sức khoẻ</a></div>
+                                    </div>
+                                </div>
+                                <div class="menu-product">
+                                    <div class="nav-product-title">
+                                        <div class="nav-title-left"><img alt="" src="img/svg/4dot-icon.svg" width="27px" height="27px" />Sản Phẩm bán chạy</div>
+                                        <div class="nav-title-right"><a href="#">Xem tất cả</a></div>
+                                    </div>
+                                    <div class="menu-product-grid">
+                                        <div class="menu-product-item">
+                                            <div class="pharmacy__bestsale--cover pharmacy__bestsale--style-1">
+                                                <div class="pharmacy-thumb">
+                                                    <a href=""><img src="./img/einsprodukt.png" alt="first product" /></a>
+                                                </div>
+                                                <div class="pharmacy__bestsale--include fix-size">
+                                                  <a class="pharmacy__bestsale--functionalfood" href="#">Thực phẩm chức năng</a>
+                                                  <a class="pharmacy__bestsale--title" href="#">Viên Uống Sâm Nhung Bổ Thận Nv Dolexpharm Giúp Tráng...</a>
+                                                  <div class="pharmacy__bestsale--price">
+                                                    110.00
+                                                    <p>/hộp</p>
+                                                  </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="menu-product-item">
+                                            <div class="pharmacy__bestsale--cover pharmacy__bestsale--style-1">
+                                                <div class="pharmacy-thumb">
+                                                    <a href=""><img src="./img/zweiprodukt.png" alt="second product" /></a>
+                                                </div>
+                                                <div class="pharmacy__bestsale--include  fix-size">
+                                                  <a class="pharmacy__bestsale--functionalfood" href="#"
+                                                    >Thực phẩm chức năng</a
+                                                  >
+                                                  <a class="pharmacy__bestsale--title" href="#"
+                                                    >Viên Uống Sâm Nhung Bổ Thận Nv Dolexpharm Giúp Tráng
+                                                    ...</a
+                                                  >
+                                                  <div class="pharmacy__bestsale--price">
+                                                    110.00
+                                                    <p>/hộp</p>
+                                                  </div>
+                                                </div>
+                                              </div>
+                                        </div>
+                                        <div class="menu-product-item">
+                                            <div class="pharmacy__bestsale--cover pharmacy__bestsale--style-1">
+                                                <div class="pharmacy-thumb">
+                                                    <a href=""><img src="./img/dreiprodukt.png" alt="first product" /></a>
+                                                </div>
+                                                <div class="pharmacy__bestsale--include fix-size">
+                                                  <a class="pharmacy__bestsale--functionalfood" href="#"
+                                                    >Thực phẩm chức năng</a
+                                                  >
+                                                  <a class="pharmacy__bestsale--title" href="#"
+                                                    >Viên Uống Sâm Nhung Bổ Thận Nv Dolexpharm Giúp Tráng
+                                                    ...</a
+                                                  >
+                                                  <div class="pharmacy__bestsale--price">
+                                                    110.00
+                                                    <p>/hộp</p>
+                                                  </div>
+                                                </div>
+                                              </div>
+                                        </div>
+                                        <div class="menu-product-item">
+                                            <div class="pharmacy__bestsale--cover pharmacy__bestsale--style-1">
+                                                <div class="pharmacy-thumb">
+                                                    <a href=""><img src="./img/einsprodukt.png" alt="first product" /></a>
+                                                </div>
+                                                <div class="pharmacy__bestsale--include">
+                                                  <a class="pharmacy__bestsale--functionalfood" href="#"
+                                                    >Thực phẩm chức năng</a
+                                                  >
+                                                  <a class="pharmacy__bestsale--title" href="#"
+                                                    >Viên Uống Sâm Nhung Bổ Thận Nv Dolexpharm Giúp Tráng
+                                                    ...</a
+                                                  >
+                                                  <div class="pharmacy__bestsale--price">
+                                                    110.00
+                                                    <p>/hộp</p>
+                                                  </div>
+                                                </div>
+                                              </div>
+                                        </div>
+                                        <div class="menu-product-item">
+                                            <div class="pharmacy__bestsale--cover pharmacy__bestsale--style-1">
+                                                <div class="pharmacy-thumb">
+                                                    <a href=""><img src="./img/einsprodukt.png" alt="first product" /></a>
+                                                </div>
+                                                <div class="pharmacy__bestsale--include fix-size">
+                                                  <a class="pharmacy__bestsale--functionalfood" href="#"
+                                                    >Thực phẩm chức năng</a
+                                                  >
+                                                  <a class="pharmacy__bestsale--title" href="#"
+                                                    >Viên Uống Sâm Nhung Bổ Thận Nv Dolexpharm Giúp Tráng
+                                                    ...</a
+                                                  >
+                                                  <div class="pharmacy__bestsale--price">
+                                                    110.00
+                                                    <p>/hộp</p>
+                                                  </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+            </li>
+            <li>
+                <a href="#">
+                  <span>Dược Mỹ Phẩm</span>
+                  <img class="dropdown-icon" src="./img/svg/dropdown.svg" alt="dropdown" />
+                </a>
+            </li>
+            <li>
+                <a href="#">
+                  <span>Thiết bị y tế</span>
+                  <img class="dropdown-icon" src="./img/svg/dropdown.svg" alt="dropdown" />
+                </a>
+            </li>
+            <li>
+                <a href="#">
+                  <span>Chăm sóc cá nhân</span>
+                  <img class="dropdown-icon" src="./img/svg/dropdown.svg" alt="dropdown" />
+                </a>
+            </li>
+            <li>
+                <a href="#">
+                  <span>Thuốc</span>
+                  <img class="dropdown-icon" src="./img/svg/dropdown.svg" alt="dropdown" />
+                </a>
+            </li>
+            <li>
+                <a href="#">
+                  <span>Bản tin sức khoẻ</span>
+                  <img class="dropdown-icon" src="./img/svg/dropdown.svg" alt="dropdown" />
+                </a>
+            </li>
+          </ul>
+        </div>
+        
+        <div class="choosen-health__tablet-mobile">
+        
+          <div class="nav-button-close"><button class="button-close"><i class="fa-solid fa-xmark"></i></button></div>
+          
+          <div class="nav-mobile-wrap">
+              <ul class="nav-mobile">
+                <li class="has-dropdown">
+                    <a href="">Thuốc</a>
+                    <ul class="dropdown">
+                        <li><a href="#">Sinh lý nam</a></li>
+                        <li><a href="#">Sinh lý nữ</a></li>
+                        <li><a href="#">Hỗ trợ mãn kinh</a></li>
+                        <li><a href="#">Cân bằng nội tiết tố</a></li>
+                        <li><a href="#">Sức khoẻ tình dục</a></li>
+                        <li><a href="#">Sức khoẻ</a></li>
+                    </ul>
+                </li>
+                <li class="has-dropdown">
+                    <a href="">Thực phẩm Chức Năng</a>
+                    <ul class="dropdown">
+                        <li><a href="#">Sinh lý nam</a></li>
+                        <li><a href="#">Sinh lý nữ</a></li>
+                        <li><a href="#">Hỗ trợ mãn kinh</a></li>
+                        <li><a href="#">Cân bằng nội tiết tố</a></li>
+                        <li><a href="#">Sức khoẻ tình dục</a></li>
+                        <li><a href="#">Sức khoẻ</a></li>
+                    </ul>
+                </li>
+                <li class="has-dropdown">
+                    <a href="">Dược Mỹ Phẩm</a>
+                    <ul class="dropdown">
+                        <li><a href="#">Sinh lý nam</a></li>
+                        <li><a href="#">Sinh lý nữ</a></li>
+                        <li><a href="#">Hỗ trợ mãn kinh</a></li>
+                        <li><a href="#">Cân bằng nội tiết tố</a></li>
+                        <li><a href="#">Sức khoẻ tình dục</a></li>
+                        <li><a href="#">Sức khoẻ</a></li>
+                    </ul>
+                </li>
+                <li class="has-dropdown">
+                    <a href="">Thiết bị y tế</a>
+                    <ul class="dropdown">
+                        <li><a href="#">Sinh lý nam</a></li>
+                        <li><a href="#">Sinh lý nữ</a></li>
+                        <li><a href="#">Hỗ trợ mãn kinh</a></li>
+                        <li><a href="#">Cân bằng nội tiết tố</a></li>
+                        <li><a href="#">Sức khoẻ tình dục</a></li>
+                        <li><a href="#">Sức khoẻ</a></li>
+                    </ul>
+                </li>
+                <li class="has-dropdown">
+                    <a href="">Chăm sóc cá nhân</a>
+                    <ul class="dropdown">
+                        <li><a href="#">Sinh lý nam</a></li>
+                        <li><a href="#">Sinh lý nữ</a></li>
+                        <li><a href="#">Hỗ trợ mãn kinh</a></li>
+                        <li><a href="#">Cân bằng nội tiết tố</a></li>
+                        <li><a href="#">Sức khoẻ tình dục</a></li>
+                        <li><a href="#">Sức khoẻ</a></li>
+                    </ul>
+                </li>
+                <li class="has-dropdown">
+                    <a href="">Bản tin sức khoẻ</a>
+                    <ul class="dropdown">
+                        <li><a href="#">Sinh lý nam</a></li>
+                        <li><a href="#">Sinh lý nữ</a></li>
+                        <li><a href="#">Hỗ trợ mãn kinh</a></li>
+                        <li><a href="#">Cân bằng nội tiết tố</a></li>
+                        <li><a href="#">Sức khoẻ tình dục</a></li>
+                        <li><a href="#">Sức khoẻ</a></li>
+                    </ul>
+                </li>
+              </ul>
+          </div>
+        </div>
+    </div>
+</div>
+  
+<main class="main">
+    <div class="sc">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-9 order-md-2">
+                    <div class="margin-50">
+                        <h2 class="sc-title-2">Thực phẩm chức năng</h2>
+                        <div class="row">
+                            <div class="col-md-6">
+                                <div class="dm-box">
+                                    <div class="dm-left text-center">
+                                        <div class="inner">
+                                            <div class="dm-thumb"><img alt="" src="img/svg/ic-sinhly.svg" width="68px" height="68px" /></div>
+                                            <h6 class="dm-title">Sinh Lý - Nội Tiết Tố</h6>
+                                            <div class="dm-count">44 sản phẩm</div>
+                                        </div>
+                                    </div>
+                                    <div class="dm-right">
+                                        <div class="inner">
+                                            <ul class="dm-list">
+                                                <li><a href="">Sinh lý nam</a></li>
+                                                <li><a href="">Sinh lý nữ</a></li>
+                                                <li><a href="">Hỗ trợ mãn kinh</a></li>
+                                                <li><a href="">Cân bằng nội tiết tố</a></li>
+                                                <li><a href="">Sức khoẻ tình dục</a></li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="dm-box">
+                                    <div class="dm-left text-center">
+                                        <div class="inner">
+                                            <div class="dm-thumb"><img alt="" src="img/svg/tim-mach.svg" width="68px" height="68px" /></div>
+                                            <h6 class="dm-title">Sức khoẻ tim mạch</h6>
+                                            <div class="dm-count">44 sản phẩm</div>
+                                        </div>
+                                    </div>
+                                    <div class="dm-right">
+                                        <div class="inner">
+                                            <ul class="dm-list">
+                                                <li><a href="">Huyết áp</a></li>
+                                                <li><a href="">Cholesterol</a></li>
+                                                <li><a href="">Suy giãn tĩnh mạch</a></li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="dm-box">
+                                    <div class="dm-left text-center">
+                                        <div class="inner">
+                                            <div class="dm-thumb"><img alt="" src="img/svg/tieu-hoa.svg" width="68px" height="68px" /></div>
+                                            <h6 class="dm-title">Hỗ trợ tiêu hoá</h6>
+                                            <div class="dm-count">44 sản phẩm</div>
+                                        </div>
+                                    </div>
+                                    <div class="dm-right">
+                                        <div class="inner">
+                                            <ul class="dm-list">
+                                                <li><a href="">Dạ dày, tá tràng</a></li>
+                                                <li><a href="">Nhuận tràng</a></li>
+                                                <li><a href="">Khó tiêu</a></li>
+                                                <li><a href="">Táo bón</a></li>
+                                                <li><a href="">Đại tràng</a></li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="dm-box">
+                                    <div class="dm-left text-center">
+                                        <div class="inner">
+                                            <div class="dm-thumb"><img alt="" src="img/svg/than-kinh.svg" width="68px" height="68px" /></div>
+                                            <h6 class="dm-title">Thần kinh não</h6>
+                                            <div class="dm-count">44 sản phẩm</div>
+                                        </div>
+                                    </div>
+                                    <div class="dm-right">
+                                        <div class="inner">
+                                            <ul class="dm-list">
+                                                <li><a href="">Bổ não - cải thiện trí nhớ</a></li>
+                                                <li><a href="">Kiểm soát căng thẳng</a></li>
+                                                <li><a href="">Hỗ trợ giấc ngủ ngon</a></li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="dm-box">
+                                    <div class="dm-left text-center">
+                                        <div class="inner">
+                                            <div class="dm-thumb"><img alt="" src="img/svg/hotro-dieu-tri.svg" width="68px" height="68px" /></div>
+                                            <h6 class="dm-title">Hỗ trợ điều trị</h6>
+                                            <div class="dm-count">44 sản phẩm</div>
+                                        </div>
+                                    </div>
+                                    <div class="dm-right">
+                                        <div class="inner">
+                                            <div class="row">
+                                                <div class="col-sm-6">
+                                                    <ul class="dm-list">
+                                                        <li><a href="">Trĩ</a></li>
+                                                        <li><a href="">Cơ xương khớp</a></li>
+                                                        <li><a href="">Tiểu đường</a></li>
+                                                        <li><a href="">Thận - Tiền liệt</a></li>
+                                                        <li><a href="">Tuyến</a></li>
+                                                    </ul>
+                                                </div>
+                                                <div class="col-sm-6">
+                                                    <ul class="dm-list">
+                                                        <li><a href="">Hô hấp - Xoang</a></li>
+                                                        <li><a href="">Gout</a></li>
+                                                        <li><a href="">Gan - Mật</a></li>
+                                                        <li><a href="">Ung thư</a></li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="dm-box">
+                                    <div class="dm-left text-center">
+                                        <div class="inner">
+                                            <div class="dm-thumb"><img alt="" src="img/svg/dinh-duong.svg" width="68px" height="68px" /></div>
+                                            <h6 class="dm-title">Cải thiện tăng cường chức năng</h6>
+                                            <div class="dm-count">44 sản phẩm</div>
+                                        </div>
+                                    </div>
+                                    <div class="dm-right">
+                                        <div class="inner">
+                                            <ul class="dm-list">
+                                                <li><a href="">Bảo vệ mắt</a></li>
+                                                <li><a href="">Hỗ trợ trao đổi chất</a></li>
+                                                <li><a href="">Tăng sức đề kháng</a></li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="dm-box">
+                                    <div class="dm-left text-center">
+                                        <div class="inner">
+                                            <div class="dm-thumb"><img alt="" src="img/svg/thao-duoc-2.svg" width="68px" height="68px" /></div>
+                                            <h6 class="dm-title">Thảo dược & thực phẩm tự nhiên</h6>
+                                            <div class="dm-count">44 sản phẩm</div>
+                                        </div>
+                                    </div>
+                                    <div class="dm-right">
+                                        <div class="inner">
+                                            <div class="row">
+                                                <div class="col-sm-6">
+                                                   <ul class="dm-list">
+                                                        <li><a href="">Nghệ & Curcumin</a></li>
+                                                        <li><a href="">Nhân sâm</a></li>
+                                                        <li><a href="">Hà Thủ Ô</a></li>
+                                                        <li><a href="">Sữa ong chúa</a></li>
+                                                    </ul>
+                                                </div>
+                                                <div class="col-sm-6">
+                                                    <ul class="dm-list">
+                                                        <li><a href="">Mật ong</a></li>
+                                                        <li><a href="">Tỏi</a></li>
+                                                        <li><a href="">Đông trùng hạ thảo</a></li>
+                                                        <li><a href="">Trinh nữ hoàng cung</a></li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>    
+                    </div>
+                    
+                    <div class="margin-50">
+                        <div class="pharmacy__bestsale pharmacy__muticolor pharmacy__carousel__1 pharmacy__bestsale__normal">
+                            <div class="sc-title">
+                                <div class="sc-title-left">
+                                    <h2 class="pharmacy__title pharmacy__title--extend">
+                                        <img alt="" src="img/svg/icon-khuyen-mai.svg" width="18px" height="20px" /> Sản phẩm bán chạy nhất
+                                    </h2>
+                                </div>
+                                <div class="sc-title-right text-white"><a href="">Xem tất cả <img alt="" src="img/svg/arrow-right.svg" /></a></div>
+                            </div>
+                            <div class="swiper firstwiper">
+                                <div class="swiper-wrapper">
+                                    <div class="swiper-slide">
+                                        <div class="pharmacy__bestsale--cover pharmacy__bestsale--bestchoice">
+                                            <div class="pharmacy-thumb">
+                                                <a href="#">
+                                                    <img src="./img/einsprodukt.png" alt="first product" />
+                                                </a>
+                                                <div class="add-cart">
+                                                    <a href="#"><img alt="" src="img/svg/icon-cart.svg" width="20px" height="19px" />Thêm giỏ hàng</a>
+                                                </div>
+                                            </div>
+                                            <div class="pharmacy__bestsale--include fix-size">
+                                                <a class="pharmacy__bestsale--functionalfood" href="#">Thực phẩm chức năng</a>
+                                                <a class="pharmacy__bestsale--title" href="#">Viên Uống Sâm Nhung Bổ Thận Nv Dolexpharm Giúp Tráng
+                                                ...</a>
+                                                
+                                                <div class="pharmacy__bottom">
+                                                    <div class="pharmacy__bestsale--price">
+                                                    110.00
+                                                    <p>/hộp</p>
+                                                    </div>
+                                                    <div class="pharmacy__sale"><span>15%</span></div>
+                                                </div>
+                                                
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <div class="pharmacy__bestsale--cover pharmacy__bestsale--bestchoice">
+                                            <div class="pharmacy-thumb">
+                                                <a href="#">
+                                                    <img src="./img/zweiprodukt.png" alt="first product" />
+                                                </a>
+                                                <div class="add-cart">
+                                                    <a href="#"><img alt="" src="img/svg/icon-cart.svg" width="20px" height="19px" />Thêm giỏ hàng</a>
+                                                </div>
+                                            </div>
+                                            <div class="pharmacy__bestsale--include  fix-size">
+                                                <a class="pharmacy__bestsale--functionalfood" href="#"
+                                                >Thực phẩm chức năng</a
+                                                >
+                                                <a class="pharmacy__bestsale--title" href="#"
+                                                >Viên Uống Sâm Nhung Bổ Thận Nv Dolexpharm Giúp Tráng
+                                                ...</a
+                                                >
+                                                <div class="pharmacy__bottom">
+                                                    <div class="pharmacy__bestsale--price">
+                                                        110.00
+                                                        <p>/hộp</p>
+                                                    </div>
+                                                    <div class="pharmacy__sale"><span>15%</span></div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <div class="pharmacy__bestsale--cover pharmacy__bestsale--bestchoice">
+                                            <div class="pharmacy-thumb">
+                                                <a href="#">
+                                                    <img src="./img/dreiprodukt.png" alt="first product" />
+                                                </a>
+                                                <div class="add-cart">
+                                                    <a href="#"><img alt="" src="img/svg/icon-cart.svg" width="20px" height="19px" />Thêm giỏ hàng</a>
+                                                </div>
+                                            </div>
+                                            <div class="pharmacy__bestsale--include fix-size">
+                                                <a class="pharmacy__bestsale--functionalfood" href="#"
+                                                >Thực phẩm chức năng</a
+                                                >
+                                                <a class="pharmacy__bestsale--title" href="#"
+                                                >Viên Uống Sâm Nhung Bổ Thận Nv Dolexpharm Giúp Tráng
+                                                ...</a
+                                                >
+                                                <div class="pharmacy__bottom">
+                                                    <div class="pharmacy__bestsale--price">
+                                                        110.00
+                                                        <p>/hộp</p>
+                                                    </div>
+                                                    <div class="pharmacy__sale"><span>15%</span></div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <div class="pharmacy__bestsale--cover pharmacy__bestsale--bestchoice">
+                                            <div class="pharmacy-thumb">
+                                                <a href="#">
+                                                    <img src="./img/vierprodukt.png" alt="four product" />
+                                                </a>
+                                                <div class="add-cart">
+                                                    <a href="#"><img alt="" src="img/svg/icon-cart.svg" width="20px" height="19px" />Thêm giỏ hàng</a>
+                                                </div>
+                                            </div>
+                                            <div class="pharmacy__bestsale--include fix-size">
+                                                <a class="pharmacy__bestsale--functionalfood" href="#"
+                                                >Thực phẩm chức năng</a
+                                                >
+                                                <a class="pharmacy__bestsale--title" href="#"
+                                                >Viên Uống Sâm Nhung Bổ Thận Nv Dolexpharm Giúp Tráng
+                                                ...</a
+                                                >
+                                                <div class="pharmacy__bottom">
+                                                    <div class="pharmacy__bestsale--price">
+                                                        110.00
+                                                        <p>/hộp</p>
+                                                    </div>
+                                                    <div class="pharmacy__sale"><span>15%</span></div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <div class="pharmacy__bestsale--cover pharmacy__bestsale--bestchoice">
+                                            <div class="pharmacy-thumb">
+                                                <a href="#">
+                                                    <img src="./img/fuefprodukt.png" alt="five product" />
+                                                </a>
+                                                <div class="add-cart">
+                                                    <a href="#"><img alt="" src="img/svg/icon-cart.svg" width="20px" height="19px" />Thêm giỏ hàng</a>
+                                                </div>
+                                            </div>
+                                            <div class="pharmacy__bestsale--include fix-size">
+                                                <a class="pharmacy__bestsale--functionalfood" href="#"
+                                                >Thực phẩm chức năng</a
+                                                >
+                                                <a class="pharmacy__bestsale--title" href="#"
+                                                >Viên Uống Sâm Nhung Bổ Thận Nv Dolexpharm Giúp Tráng
+                                                ...</a
+                                                >
+                                                <div class="pharmacy__bottom">
+                                                    <div class="pharmacy__bestsale--price">
+                                                        110.00
+                                                        <p>/hộp</p>
+                                                    </div>
+                                                    <div class="pharmacy__sale"><span>15%</span></div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <div class="pharmacy__bestsale--cover pharmacy__bestsale--bestchoice">
+                                            <div class="pharmacy-thumb">
+                                                <a href="#">
+                                                    <img src="./img/einsprodukt.png" alt="first product" />
+                                                </a>
+                                                <div class="add-cart">
+                                                    <a href="#"><img alt="" src="img/svg/icon-cart.svg" width="20px" height="19px" />Thêm giỏ hàng</a>
+                                                </div>
+                                            </div>
+                                            <div class="pharmacy__bestsale--include">
+                                                <a class="pharmacy__bestsale--functionalfood" href="#"
+                                                >Thực phẩm chức năng</a
+                                                >
+                                                <a class="pharmacy__bestsale--title" href="#"
+                                                >Viên Uống Sâm Nhung Bổ Thận Nv Dolexpharm Giúp Tráng
+                                                ...</a
+                                                >
+                                                <div class="pharmacy__bottom">
+                                                    <div class="pharmacy__bestsale--price">
+                                                        110.00
+                                                        <p>/hộp</p>
+                                                    </div>
+                                                    <div class="pharmacy__sale"><span>15%</span></div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="swiper-button-nav swiper-button-nav-next">
+                                    <img alt="" src="img/svg/next.svg" width="24px" height="41px" />
+                                </div>
+                                <div class="swiper-button-nav swiper-button-nav-prev">
+                                    <img alt="" src="img/svg/prev.svg" width="24px" height="41px" />
+                                </div>
+                                <div class="swiper-pagination-custom"></div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="margin-50">
+                        <div class="row">
+                            <div class="col-lg-6">
+                                <h2 class="sc-title-2">Sản Phẩm Nổi Bật</h2>
+                            </div>
+                            <div class="col-lg-6">
+                                <ul class="product-filters">
+                                    <li><a class="btn-3 active" href="">Bán chạy</a></li>
+                                    <li><a class="btn-3" href="">Mới nhất</a></li>
+                                    <li><a class="btn-3" href="">Giá thấp</a></li>
+                                    <li><a class="btn-3" href="">Giá cao</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="row product-grid">
+                            <div class="col-lg-3 col-md-4 col-sm-4">
+                                <div class="pharmacy__bestsale--cover pharmacy__bestsale--bestchoice">
+                                    <div class="pharmacy-thumb">
+                                        <a href="#">
+                                            <img src="./img/einsprodukt.png" alt="first product" />
+                                        </a>
+                                        <div class="add-cart">
+                                            <a href="#"><img alt="" src="img/svg/icon-cart.svg" width="20px" height="19px" />Thêm giỏ hàng</a>
+                                        </div>
+                                    </div>
+                                    <div class="pharmacy__bestsale--include">
+                                        <a class="pharmacy__bestsale--functionalfood" href="#"
+                                        >Thực phẩm chức năng</a
+                                        >
+                                        <a class="pharmacy__bestsale--title" href="#"
+                                        >Viên Uống Sâm Nhung Bổ Thận Nv Dolexpharm Giúp Tráng
+                                        ...</a
+                                        >
+                                        <div class="pharmacy__bottom">
+                                            <div class="pharmacy__bestsale--price">
+                                                110.00
+                                                <p>/hộp</p>
+                                            </div>
+                                            <div class="pharmacy__sale"><span>15%</span></div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-3 col-md-4 col-sm-4">
+                                <div class="pharmacy__bestsale--cover pharmacy__bestsale--bestchoice">
+                                    <div class="pharmacy-thumb">
+                                        <a href="#">
+                                            <img src="./img/fuefprodukt.png" alt="five product" />
+                                        </a>
+                                        <div class="add-cart">
+                                            <a href="#"><img alt="" src="img/svg/icon-cart.svg" width="20px" height="19px" />Thêm giỏ hàng</a>
+                                        </div>
+                                    </div>
+                                    <div class="pharmacy__bestsale--include fix-size">
+                                        <a class="pharmacy__bestsale--functionalfood" href="#"
+                                        >Thực phẩm chức năng</a
+                                        >
+                                        <a class="pharmacy__bestsale--title" href="#"
+                                        >Viên Uống Sâm Nhung Bổ Thận Nv Dolexpharm Giúp Tráng
+                                        ...</a
+                                        >
+                                        <div class="pharmacy__bottom">
+                                            <div class="pharmacy__bestsale--price">
+                                                110.00
+                                                <p>/hộp</p>
+                                            </div>
+                                            <div class="pharmacy__sale"><span>15%</span></div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-3 col-md-4 col-sm-4">
+                                <div class="pharmacy__bestsale--cover pharmacy__bestsale--bestchoice">
+                                    <div class="pharmacy-thumb">
+                                        <a href="#">
+                                            <img src="./img/vierprodukt.png" alt="four product" />
+                                        </a>
+                                        <div class="add-cart">
+                                            <a href="#"><img alt="" src="img/svg/icon-cart.svg" width="20px" height="19px" />Thêm giỏ hàng</a>
+                                        </div>
+                                    </div>
+                                    <div class="pharmacy__bestsale--include fix-size">
+                                        <a class="pharmacy__bestsale--functionalfood" href="#"
+                                        >Thực phẩm chức năng</a
+                                        >
+                                        <a class="pharmacy__bestsale--title" href="#"
+                                        >Viên Uống Sâm Nhung Bổ Thận Nv Dolexpharm Giúp Tráng
+                                        ...</a
+                                        >
+                                        <div class="pharmacy__bottom">
+                                            <div class="pharmacy__bestsale--price">
+                                                110.00
+                                                <p>/hộp</p>
+                                            </div>
+                                            <div class="pharmacy__sale"><span>15%</span></div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-3 col-md-4 col-sm-4">
+                                <div class="pharmacy__bestsale--cover pharmacy__bestsale--bestchoice">
+                                    <div class="pharmacy-thumb">
+                                        <a href="#">
+                                            <img src="./img/zweiprodukt.png" alt="first product" />
+                                        </a>
+                                        <div class="add-cart">
+                                            <a href="#"><img alt="" src="img/svg/icon-cart.svg" width="20px" height="19px" />Thêm giỏ hàng</a>
+                                        </div>
+                                    </div>
+                                    <div class="pharmacy__bestsale--include  fix-size">
+                                        <a class="pharmacy__bestsale--functionalfood" href="#"
+                                        >Thực phẩm chức năng</a
+                                        >
+                                        <a class="pharmacy__bestsale--title" href="#"
+                                        >Viên Uống Sâm Nhung Bổ Thận Nv Dolexpharm Giúp Tráng
+                                        ...</a
+                                        >
+                                        <div class="pharmacy__bottom">
+                                            <div class="pharmacy__bestsale--price">
+                                                110.00
+                                                <p>/hộp</p>
+                                            </div>
+                                            <div class="pharmacy__sale"><span>15%</span></div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-3 col-md-4 col-sm-4">
+                                <div class="pharmacy__bestsale--cover pharmacy__bestsale--bestchoice">
+                                    <div class="pharmacy-thumb">
+                                        <a href="#">
+                                            <img src="./img/einsprodukt.png" alt="first product" />
+                                        </a>
+                                        <div class="add-cart">
+                                            <a href="#"><img alt="" src="img/svg/icon-cart.svg" width="20px" height="19px" />Thêm giỏ hàng</a>
+                                        </div>
+                                    </div>
+                                    <div class="pharmacy__bestsale--include fix-size">
+                                        <a class="pharmacy__bestsale--functionalfood" href="#">Thực phẩm chức năng</a>
+                                        <a class="pharmacy__bestsale--title" href="#">Viên Uống Sâm Nhung Bổ Thận Nv Dolexpharm Giúp Tráng
+                                        ...</a>
+                                        
+                                        <div class="pharmacy__bottom">
+                                            <div class="pharmacy__bestsale--price">
+                                            110.00
+                                            <p>/hộp</p>
+                                            </div>
+                                            <div class="pharmacy__sale"><span>15%</span></div>
+                                        </div>
+                                        
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-3 col-md-4 col-sm-4">
+                                <div class="pharmacy__bestsale--cover pharmacy__bestsale--bestchoice">
+                                    <div class="pharmacy-thumb">
+                                        <a href="#">
+                                            <img src="./img/einsprodukt.png" alt="first product" />
+                                        </a>
+                                        <div class="add-cart">
+                                            <a href="#"><img alt="" src="img/svg/icon-cart.svg" width="20px" height="19px" />Thêm giỏ hàng</a>
+                                        </div>
+                                    </div>
+                                    <div class="pharmacy__bestsale--include">
+                                        <a class="pharmacy__bestsale--functionalfood" href="#"
+                                        >Thực phẩm chức năng</a
+                                        >
+                                        <a class="pharmacy__bestsale--title" href="#"
+                                        >Viên Uống Sâm Nhung Bổ Thận Nv Dolexpharm Giúp Tráng
+                                        ...</a
+                                        >
+                                        <div class="pharmacy__bottom">
+                                            <div class="pharmacy__bestsale--price">
+                                                110.00
+                                                <p>/hộp</p>
+                                            </div>
+                                            <div class="pharmacy__sale"><span>15%</span></div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-3 col-md-4 col-sm-4">
+                                <div class="pharmacy__bestsale--cover pharmacy__bestsale--bestchoice">
+                                    <div class="pharmacy-thumb">
+                                        <a href="#">
+                                            <img src="./img/fuefprodukt.png" alt="five product" />
+                                        </a>
+                                        <div class="add-cart">
+                                            <a href="#"><img alt="" src="img/svg/icon-cart.svg" width="20px" height="19px" />Thêm giỏ hàng</a>
+                                        </div>
+                                    </div>
+                                    <div class="pharmacy__bestsale--include fix-size">
+                                        <a class="pharmacy__bestsale--functionalfood" href="#"
+                                        >Thực phẩm chức năng</a
+                                        >
+                                        <a class="pharmacy__bestsale--title" href="#"
+                                        >Viên Uống Sâm Nhung Bổ Thận Nv Dolexpharm Giúp Tráng
+                                        ...</a
+                                        >
+                                        <div class="pharmacy__bottom">
+                                            <div class="pharmacy__bestsale--price">
+                                                110.00
+                                                <p>/hộp</p>
+                                            </div>
+                                            <div class="pharmacy__sale"><span>15%</span></div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-3 col-md-4 col-sm-4">
+                                <div class="pharmacy__bestsale--cover pharmacy__bestsale--bestchoice">
+                                    <div class="pharmacy-thumb">
+                                        <a href="#">
+                                            <img src="./img/vierprodukt.png" alt="four product" />
+                                        </a>
+                                        <div class="add-cart">
+                                            <a href="#"><img alt="" src="img/svg/icon-cart.svg" width="20px" height="19px" />Thêm giỏ hàng</a>
+                                        </div>
+                                    </div>
+                                    <div class="pharmacy__bestsale--include fix-size">
+                                        <a class="pharmacy__bestsale--functionalfood" href="#"
+                                        >Thực phẩm chức năng</a
+                                        >
+                                        <a class="pharmacy__bestsale--title" href="#"
+                                        >Viên Uống Sâm Nhung Bổ Thận Nv Dolexpharm Giúp Tráng
+                                        ...</a
+                                        >
+                                        <div class="pharmacy__bottom">
+                                            <div class="pharmacy__bestsale--price">
+                                                110.00
+                                                <p>/hộp</p>
+                                            </div>
+                                            <div class="pharmacy__sale"><span>15%</span></div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-3 col-md-4 col-sm-4">
+                                <div class="pharmacy__bestsale--cover pharmacy__bestsale--bestchoice">
+                                    <div class="pharmacy-thumb">
+                                        <a href="#">
+                                            <img src="./img/zweiprodukt.png" alt="first product" />
+                                        </a>
+                                        <div class="add-cart">
+                                            <a href="#"><img alt="" src="img/svg/icon-cart.svg" width="20px" height="19px" />Thêm giỏ hàng</a>
+                                        </div>
+                                    </div>
+                                    <div class="pharmacy__bestsale--include  fix-size">
+                                        <a class="pharmacy__bestsale--functionalfood" href="#"
+                                        >Thực phẩm chức năng</a
+                                        >
+                                        <a class="pharmacy__bestsale--title" href="#"
+                                        >Viên Uống Sâm Nhung Bổ Thận Nv Dolexpharm Giúp Tráng
+                                        ...</a
+                                        >
+                                        <div class="pharmacy__bottom">
+                                            <div class="pharmacy__bestsale--price">
+                                                110.00
+                                                <p>/hộp</p>
+                                            </div>
+                                            <div class="pharmacy__sale"><span>15%</span></div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-3 col-md-4 col-sm-4">
+                                <div class="pharmacy__bestsale--cover pharmacy__bestsale--bestchoice">
+                                    <div class="pharmacy-thumb">
+                                        <a href="#">
+                                            <img src="./img/einsprodukt.png" alt="first product" />
+                                        </a>
+                                        <div class="add-cart">
+                                            <a href="#"><img alt="" src="img/svg/icon-cart.svg" width="20px" height="19px" />Thêm giỏ hàng</a>
+                                        </div>
+                                    </div>
+                                    <div class="pharmacy__bestsale--include fix-size">
+                                        <a class="pharmacy__bestsale--functionalfood" href="#">Thực phẩm chức năng</a>
+                                        <a class="pharmacy__bestsale--title" href="#">Viên Uống Sâm Nhung Bổ Thận Nv Dolexpharm Giúp Tráng
+                                        ...</a>
+                                        
+                                        <div class="pharmacy__bottom">
+                                            <div class="pharmacy__bestsale--price">
+                                            110.00
+                                            <p>/hộp</p>
+                                            </div>
+                                            <div class="pharmacy__sale"><span>15%</span></div>
+                                        </div>
+                                        
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-3 col-md-4 col-sm-4">
+                                <div class="pharmacy__bestsale--cover pharmacy__bestsale--bestchoice">
+                                    <div class="pharmacy-thumb">
+                                        <a href="#">
+                                            <img src="./img/einsprodukt.png" alt="first product" />
+                                        </a>
+                                        <div class="add-cart">
+                                            <a href="#"><img alt="" src="img/svg/icon-cart.svg" width="20px" height="19px" />Thêm giỏ hàng</a>
+                                        </div>
+                                    </div>
+                                    <div class="pharmacy__bestsale--include">
+                                        <a class="pharmacy__bestsale--functionalfood" href="#"
+                                        >Thực phẩm chức năng</a
+                                        >
+                                        <a class="pharmacy__bestsale--title" href="#"
+                                        >Viên Uống Sâm Nhung Bổ Thận Nv Dolexpharm Giúp Tráng
+                                        ...</a
+                                        >
+                                        <div class="pharmacy__bottom">
+                                            <div class="pharmacy__bestsale--price">
+                                                110.00
+                                                <p>/hộp</p>
+                                            </div>
+                                            <div class="pharmacy__sale"><span>15%</span></div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-3 col-md-4 col-sm-4">
+                                <div class="pharmacy__bestsale--cover pharmacy__bestsale--bestchoice">
+                                    <div class="pharmacy-thumb">
+                                        <a href="#">
+                                            <img src="./img/fuefprodukt.png" alt="five product" />
+                                        </a>
+                                        <div class="add-cart">
+                                            <a href="#"><img alt="" src="img/svg/icon-cart.svg" width="20px" height="19px" />Thêm giỏ hàng</a>
+                                        </div>
+                                    </div>
+                                    <div class="pharmacy__bestsale--include fix-size">
+                                        <a class="pharmacy__bestsale--functionalfood" href="#"
+                                        >Thực phẩm chức năng</a
+                                        >
+                                        <a class="pharmacy__bestsale--title" href="#"
+                                        >Viên Uống Sâm Nhung Bổ Thận Nv Dolexpharm Giúp Tráng
+                                        ...</a
+                                        >
+                                        <div class="pharmacy__bottom">
+                                            <div class="pharmacy__bestsale--price">
+                                                110.00
+                                                <p>/hộp</p>
+                                            </div>
+                                            <div class="pharmacy__sale"><span>15%</span></div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="text-center product-load-more"><a class="btn-1 btn-product-more" href="">Xem thêm 512 sản phẩm</a></div>
+                        
+                    </div>
+                    
+                </div><!--right-column-->
+                
+                <div class="col-md-3">
+                    <div class="product-sidebar">
+                        <div class="widget-box margin-24">
+                            <h6 class="margin-12">Thương hiệu</h6>
+                            <div class="psearch margin-12">
+                                <form>
+                                    <input type="text" name="psearch" placeholder="Tìm theo tên" />
+                                    <button type="submit"><img alt="" src="img/svg/ic-search.svg" width="15px" height="15px" /></button>
+                                </form>
+                            </div>
+                            <ul class="checkbox-wrap">
+                                <li>
+                                    <label class="checkbox-style"><input type="radio" name="p" value="1" /> Tất cả</label>
+                                </li>
+                                <li>
+                                    <label class="checkbox-style"><input type="radio" name="p" value="Lab Well" /> Lab Well</label>
+                                </li>
+                                <li>
+                                    <label class="checkbox-style"><input type="radio" name="p" value="" /> KINGPHAR</label>
+                                </li>
+                                <li>
+                                    <label class="checkbox-style"><input type="radio" name="p" value="" /> Ecogreen</label>
+                                </li>
+                                <li>
+                                    <label class="checkbox-style"><input type="radio" name="p" value="" /> Nature's Supplements</label>
+                                </li>
+                                <li>
+                                    <label class="checkbox-style"><input type="radio" name="p" value="" /> NatureCare</label>
+                                </li>
+                            </ul>
+                            <a class="more-pcheck" href="#">Xem thêm</a>
+                        </div>
+                        
+                        <div class="widget-box margin-24">
+                            <h6 class="margin-12">Xuất xứ</h6>
+                            <div class="psearch margin-12">
+                                <form>
+                                    <input type="text" name="psearch" placeholder="Tìm theo tên" />
+                                    <button type="submit"><img alt="" src="img/svg/ic-search.svg" width="15px" height="15px" /></button>
+                                </form>
+                            </div>
+                            <ul class="checkbox-wrap">
+                                <li>
+                                    <label class="checkbox-style"><input type="radio" name="p" value="1" /> Tất cả</label>
+                                </li>
+                                <li>
+                                    <label class="checkbox-style"><input type="radio" name="p" value="Lab Well" /> Hoa Kỳ</label>
+                                </li>
+                                <li>
+                                    <label class="checkbox-style"><input type="radio" name="p" value="" /> Việt Nam</label>
+                                </li>
+                                <li>
+                                    <label class="checkbox-style"><input type="radio" name="p" value="" /> Úc</label>
+                                </li>
+                                <li>
+                                    <label class="checkbox-style"><input type="radio" name="p" value="" /> Nhật Bản</label>
+                                </li>
+                                <li>
+                                    <label class="checkbox-style"><input type="radio" name="p" value="" /> Đức</label>
+                                </li>
+                            </ul>
+                            <a class="more-pcheck" href="#">Xem thêm</a>
+                        </div>
+                        
+                        <div class="widget-box margin-24">
+                            <h6 class="margin-12">Hỗ trợ điều trị</h6>
+                            <div class="psearch margin-12">
+                                <form>
+                                    <input type="text" name="psearch" placeholder="Tìm theo tên" />
+                                    <button type="submit"><img alt="" src="img/svg/ic-search.svg" width="15px" height="15px" /></button>
+                                </form>
+                            </div>
+                            <ul class="checkbox-wrap">
+                                <li>
+                                    <label class="checkbox-style"><input type="radio" name="p" value="1" /> Tất cả</label>
+                                </li>
+                                <li>
+                                    <label class="checkbox-style"><input type="radio" name="p" value="Lab Well" /> Yếu sinh lý</label>
+                                </li>
+                                <li>
+                                    <label class="checkbox-style"><input type="radio" name="p" value="" /> Xuất tinh sớm</label>
+                                </li>
+                                <li>
+                                    <label class="checkbox-style"><input type="radio" name="p" value="" /> Mãn dục nam</label>
+                                </li>
+                                <li>
+                                    <label class="checkbox-style"><input type="radio" name="p" value="" /> Suy dinh dưỡng</label>
+                                </li>
+                                <li>
+                                    <label class="checkbox-style"><input type="radio" name="p" value="" /> Lão hóa da</label>
+                                </li>
+                            </ul>
+                            <a class="more-pcheck" href="#">Xem thêm</a>
+                        </div>
+                        
+                        <div class="widget-box margin-24">
+                            <h6 class="margin-12">Thành phần</h6>
+                            <div class="psearch margin-12">
+                                <form>
+                                    <input type="text" name="psearch" placeholder="Tìm theo tên" />
+                                    <button type="submit"><img alt="" src="img/svg/ic-search.svg" width="15px" height="15px" /></button>
+                                </form>
+                            </div>
+                            <ul class="checkbox-wrap">
+                                <li>
+                                    <label class="checkbox-style"><input type="radio" name="p" value="1" /> Tất cả</label>
+                                </li>
+                                <li>
+                                    <label class="checkbox-style"><input type="radio" name="p" value="Lab Well" /> Sâm Hoa Kỳ</label>
+                                </li>
+                                <li>
+                                    <label class="checkbox-style"><input type="radio" name="p" value="" /> Vừng đen</label>
+                                </li>
+                                <li>
+                                    <label class="checkbox-style"><input type="radio" name="p" value="" /> Cao bạch hoa xà</label>
+                                </li>
+                                <li>
+                                    <label class="checkbox-style"><input type="radio" name="p" value="" /> Cao uy linh tiên</label>
+                                </li>
+                                <li>
+                                    <label class="checkbox-style"><input type="radio" name="p" value="" /> Silybum Marianum Fruit Dry</label>
+                                </li>
+                            </ul>
+                            <a class="more-pcheck" href="#">Xem thêm</a>
+                        </div>
+                        
+                        <div class="widget-box margin-24">
+                            <h6 class="margin-12">Đối tượng</h6>
+                            <ul class="checkbox-wrap">
+                                <li>
+                                    <label class="checkbox-style"><input type="radio" name="p" value="1" /> Tất cả</label>
+                                </li>
+                                <li>
+                                    <label class="checkbox-style"><input type="radio" name="p" value="Lab Well" /> Người cao tuổi</label>
+                                </li>
+                                <li>
+                                    <label class="checkbox-style"><input type="radio" name="p" value="" /> Trẻ em</label>
+                                </li>
+                                <li>
+                                    <label class="checkbox-style"><input type="radio" name="p" value="" /> Phụ nữ cho con bú</label>
+                                </li>
+                                <li>
+                                    <label class="checkbox-style"><input type="radio" name="p" value="" /> Phụ nữ sau sinh</label>
+                                </li>
+                                <li>
+                                    <label class="checkbox-style"><input type="radio" name="p" value="" /> Phụ nữ có thai</label>
+                                </li>
+                            </ul>
+                            <a class="more-pcheck" href="#">Xem thêm</a>
+                        </div>
+                        
+                        <div class="widget-box margin-24">
+                            <h6 class="margin-12">Độ tuổi</h6>
+                            <ul class="checkbox-wrap">
+                                <li>
+                                    <label class="checkbox-style"><input type="radio" name="p" value="1" /> Tất cả</label>
+                                </li>
+                                <li>
+                                    <label class="checkbox-style"><input type="radio" name="p" value="Lab Well" /> Trên 18 tuổi</label>
+                                </li>
+                                <li>
+                                    <label class="checkbox-style"><input type="radio" name="p" value="" /> Trên 15 tuổi</label>
+                                </li>
+                                <li>
+                                    <label class="checkbox-style"><input type="radio" name="p" value="" /> Trên 2 tuổi</label>
+                                </li>
+                                <li>
+                                    <label class="checkbox-style"><input type="radio" name="p" value="" /> Trên 12 tuổi</label>
+                                </li>
+                                <li>
+                                    <label class="checkbox-style"><input type="radio" name="p" value="" /> Trên 11 tuổi</label>
+                                </li>
+                            </ul>
+                            <a class="more-pcheck" href="#">Xem thêm</a>
+                        </div>
+                        
+                        <div class="widget-box margin-24">
+                            <h6 class="margin-12">Giá bán</h6>
+                            
+                            <ul class="listprice-wrap">
+                                <li>
+                                    <a href="">Dưới 100.000đ</a>
+                                </li>
+                                <li>
+                                    <a href="">100.000đ đến 300.000đ</a>
+                                </li>
+                                <li>
+                                    <a href="">300.000đ đến 500.000đ</a>
+                                </li>
+                                <li>
+                                    <a href="">Trên 500.000đ</a>
+                                </li>
+                            </ul>
+                        </div>
+                        
+                    </div>
+                </div><!--left-column-->
+            </div>
+        </div>
+    </div>
+    
+    <div class="sc sc-product-bar bg-grey">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-3 col-sm-6">
+                    <div class="product-bar">
+                        <div class="bar-icon"><img alt="" src="img/svg/thuoc-gia-tot.svg" /></div>
+                        <div class="bar-content">
+                            <h6>Thuốc chính hãng</h6>
+                            <p>Đa dạng và chuyên sâu</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-sm-6">
+                    <div class="product-bar">
+                        <div class="bar-icon"><img alt="" src="img/svg/doi-tra.svg" /></div>
+                        <div class="bar-content">
+                            <h6>Đổi trả trong 30 ngày</h6>
+                            <p>Kể từ ngày mua hàng</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-sm-6">
+                    <div class="product-bar">
+                        <div class="bar-icon"><img alt="" src="img/svg/cam-ket.svg" /></div>
+                        <div class="bar-content">
+                            <h6>Cam kết 100%</h6>
+                            <p>Chất lượng sản phẩm</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-sm-6">
+                    <div class="product-bar">
+                        <div class="bar-icon"><img alt="" src="img/svg/van-chuyen.svg" /></div>
+                        <div class="bar-content">
+                            <h6>Miễn phí vận chuyển</h6>
+                            <p>Theo chính sách giao hàng</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+</main>
+  
+<footer>
+    <div class="footer-main">
+      <div class="container">
+        <h1>Nhà thuốc 3T</h1>
+        <div class="footer-main__wrap">
+          <div class="footer-main__information">
+            <div class="footer-main__location">
+              <a href="https://goo.gl/maps/BTJQz58yFjP97zkK7"><img src="./img/svg/location.svg" target="_blank"
+                  alt="location of building" />
+                <p>
+                  Trụ sở: Tầng 11, toà Zen Tower, Số 12, Khuất Duy Tiến,
+                  P.Thanh Xuân Trung, Thanh Xuân, Hà Nội
+                </p>
+              </a>
+              <a href="mailto:nhathuoc3T@gmail.com"><img src="./img/svg/gmailloca.svg" alt="gmail send" />
+                <p>nhathuoc3T@gmail.com</p>
+              </a>
+            </div>
+            <div class="line-inside"></div>
+            <div class="footer-main__check">
+              <h3>Chứng nhận</h3>
+              <div class="footer-main__authetic">
+                <img src="./img/bocongthuongcheck.png" alt="Bo cong thuong check" />
+                <img src="./img/dmcacheck.png" alt="dcma check" />
+              </div>
+            </div>
+          </div>
+          <div class="footer-main__menunav">
+            <h3>Tìm hiểu thêm</h3>
+            <p>Giới thiệu</p>
+            <p>Chính sách đổi trả và giao hàng</p>
+          </div>
+          <div class="footer-main__menunav">
+            <h3>Danh mục</h3>
+            <p>Thực phẩm chức năng</p>
+            <p>Dược mỹ phẩm</p>
+            <p>Chăm sóc cá nhân</p>
+            <p>Thuốc</p>
+            <p>Thiết bị y tế</p>
+            <p>Bản tin sức khoẻ</p>
+          </div>
+          <div class="footer-main__social">
+            <div class="calltome">
+              <img src="./img/social-media/telefon.png" alt="telephone" />
+              <div class="footer-main__social--title">
+                <p>Tư vấn mua hàng(miễn phí)</p>
+                <h2>0939 129 889</h2>
+              </div>
+            </div>
+            <div class="social-internet">
+              <img src="./img/social-media/facebook.png" alt="facebook" />
+              <img src="./img/social-media/utube.png" alt="youtube" />
+              <img src="./img/social-media/Group 1609.png" alt="zalo" />
+              <img src="./img/social-media/gmail-footer.png" alt="gmail footer" />
+            </div>
+          </div>
+        </div>
+        <p class="circlefooterleft">
+          <img src="./img/circlefooter.png" alt="circlefooter">
+        </p>
+        <p class="circlefooterright">
+          <img src="./img/circlefooter2.png" alt="circlefooter2">
+        </p>
+      </div>
+    
+    </div>
+
+    <div class="footer-after">
+      <div class="container">
+        <p>Design by GCO Software <span id="date">2022</span></p>
+      </div>
+    </div>
+    
+</footer>
+
+<div class="btns-contact">
+    <div class="social-btns">
+      <div class="social-btns__calltome">
+        <p class="social-btns__calltome--img3" >
+          <img src="./img/svg/Call.svg" alt="call ring" />
+          <div class="zoom-in-out-box"></div>
+          <div class="cover"><a class="numberphone" href="tel:0939129889">0939 129 889</a></div>
+        </p>
+      </div>
+      <div class="social-btns__social">
+        <img src="./img/svg/messengerpopup.svg" alt="messengerpopup" />
+        <img src="./img/svg/zalopopup.svg" alt="zalopopup" />
+        <button class="scroll-top" href="#home" id="scroll-top">
+          <img src="./img/svg/button-top.svg" alt="popuparrowtop" />
+        </button> 
+      </div>
+    </div>
+</div>
+
+<!-- MOdal Login-->  
+<div class="modal fade" id="login_form" tabindex="-1" role="dialog" aria-labelledby="login_form" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <div class="modal-title">Đăng nhập</div>
+                <button type="button" class="btn-close modal-close" data-bs-dismiss="modal" aria-label="Close">
+                    <img alt="" src="img/svg/close.svg" />
+                </button>
+            </div>
+            <div class="modal-body">
+                <div class="lg-wrap text-center">
+                    <div class="lg-logo"><img alt="" src="img/svg/lg-logo.svg" width="109px" height="109px" /></div>
+                    <div class="lg-desc">
+                        <p>Nhập số điện thoại bạn dùng để mua hàng tại nhà thuốc 3T</p>
+                    </div>
+                    <div class="lg-content">
+                        <form class="lg-form" method="GET" action="">
+                            <input type="text" placeholder="Nhập số điện thoại" />
+                            <input type="submit" value="Tiếp tục" />
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!--Modal Nhập theo tên Thuốc-->
+<div class="modal fade" id="nhap_thuoc" tabindex="-1" role="dialog" aria-labelledby="nhap_thuoc" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <div class="modal-title">Nhập theo tên thuốc</div>
+                <button type="button" class="btn-close modal-close" data-bs-dismiss="modal" aria-label="Close">
+                    <img alt="" src="img/svg/close.svg" />
+                </button>
+            </div>
+            <div class="modal-body">
+                <div class="search search-v2 margin-50">
+                  <form id="search-form" action="#" class="search-form">
+                    <div class="search-form-wrap">
+                        <input type="text" class="search__input search__input-second" placeholder="Tìm sản phẩm">
+                        <button class="search__button">
+                          <i class="search__icon fa-solid fa-magnifying-glass"></i>
+                        </button>
+                    </div>
+                    <div class="search-suggest search-suggest-v2">
+                        <div class="search-box search-1">
+                            <ul class="search-result-links">
+                                <li><span>F</span></li>
+                                <li><span>Fefasdin 60 Khapharco 10x10</span><a href="#">Thêm</a></li>
+                                <li><span>Katrydsin Fort 8400iu kh 10x10</span><a href="#">Thêm</a></li>
+                            </ul>    
+                        </div>
+                    </div>
+                  </form>
+                </div>
+                
+                <p class="margin-50 text-center"><img alt="" src="img/nhap-thuoc.png" width="432px" height="244px" /></p>
+                
+                <h6 class="margin-24">Tên thuốc đã nhập</h6>
+                
+                <div class="list-thuoc-nhap margin-32">
+                    <ol class="search-result-links">
+                        <li><span>Fefasdin 60 Khapharco 10x10</span><a href="#">Xoá</a></li>
+                        <li><span>Katrydsin Fort 8400iu kh 10x10</span><a href="#">Xoá</a></li>
+                    </ol> 
+                </div>
+                
+                <p class="text-center"><a class="btn-2" href="#">Hoàn thành</a></p>
+               
+            </div>
+        </div>
+    </div>
+</div>
+    
+<script src="./js/bootstrap.min.js"></script>
+<script src="./js/swiper-bundle.min.js"></script>
+<script src="./js/jquery.fancybox.min.js"></script>
+<script src="./js/main.js"></script>
+<script src="./js/functions.js"></script>
+
+</body>
+
+</html>

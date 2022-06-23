@@ -1,0 +1,13 @@
+.mini-line {
+  margin: 0 1.6rem;
+  border-right: 1px solid var(--color-grey-light-0);
+  height: 2.4rem;
+  @include maxWidth(1536px) {
+    margin: 0 1rem;
+    height: 2rem;
+  }
+  @include maxWidth(640px) {
+    margin: 0 1rem;
+    height: 2rem;
+  }
+}

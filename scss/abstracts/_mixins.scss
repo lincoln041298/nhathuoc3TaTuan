@@ -1,0 +1,34 @@
+@mixin longpagination {
+    .swiper-horizontal > .swiper-pagination-bullets .swiper-pagination-bullet,
+    .swiper-pagination-horizontal.swiper-pagination-bullets
+      .swiper-pagination-bullet {
+      margin: 0 var(--swiper-pagination-bullet-horizontal-gap, 10px);
+    }
+}
+
+@mixin  resetcontainer {
+    margin-top: 0rem;
+    margin-bottom: 0rem;
+}
+
+@mixin  widthandheightbalance {
+    img {
+      width: 4rem;
+      height: 4rem;
+      @include maxWidth(1280px) {
+        width: 3rem;
+        height: 3rem;
+      }
+    }
+}
+
+@mixin maxWidth($breakpoint) {
+  @media screen and (max-width: $breakpoint) {
+    @content;
+  }
+}
+@mixin minWidth($breakpoint) {
+  @media screen and (min-width: $breakpoint) {
+    @content;
+  }
+}

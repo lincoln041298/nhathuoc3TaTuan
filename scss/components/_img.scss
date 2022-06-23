@@ -1,0 +1,50 @@
+.pharmacy__authetic {
+
+  &--img1,
+  &--img2 {
+    width: 4.5rem;
+    height: 4.4rem;
+
+    @include maxWidth(768px) {
+      width: 3.5rem;
+      height: 3.4rem;
+    }
+
+    @include maxWidth(480px) {
+      margin: 1rem;
+      width: 3.5rem;
+      height: 3.4rem;
+    }
+  }
+
+  &--img3 {
+    width: 3.751rem;
+    height: 4.4rem;
+
+    @include maxWidth(768px) {
+      width: 3.6rem;
+      height: 3.4rem;
+    }
+
+    @include maxWidth(480px) {
+      margin: 1rem;
+      width: 3.6rem;
+      height: 3.4rem;
+    }
+  }
+
+  &--img4 {
+    width: 10.616rem;
+    height: 4.4rem;
+
+    @include maxWidth(768px) {
+      width: 9.616rem;
+      height: 3.4rem;
+    }
+    @include maxWidth(480px) {
+      margin: 1rem;
+      width: 9.616rem;
+      height: 3.4rem;
+    }
+  }
+}

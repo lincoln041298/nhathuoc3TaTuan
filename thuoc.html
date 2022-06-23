@@ -1,0 +1,1302 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Nhà Thuốc 3T</title>
+
+  
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="https://unpkg.com/swiper@8/swiper-bundle.min.css" />
+  
+  <link rel="stylesheet" href="./css/bootstrap.min.css" />
+  <link rel="stylesheet" href="./css/jquery.fancybox.min.css" />
+  <link rel="stylesheet" href="./css/style.css" />
+  
+  <script src="./js/jquery.min.js"></script>
+</head>
+
+<body>
+  <header class="header" id="home">
+    <div class="container">
+      <div class="header__logo">
+        <img src="./img/logo/logo.png" alt="logo 3t" />
+      </div>
+      
+      <div class="search for-desktop">
+          <form id="search-form" action="#" class="search-form">
+            <div class="search-form-wrap">
+                <input type="text" class="search__input search__input-thuoc" placeholder="Tìm sản phẩm" />
+                <button class="search__button">
+                  <i class="search__icon fa-solid fa-magnifying-glass"></i>
+                </button>
+            </div>
+            <div class="search-suggest">
+                <div class="search-box search-3">
+                    <div class="thuoc-button-group">
+                        <div class="radio-wrap radio-inline-wrap">
+                            <span class="radio-style checked first">
+                                <input type="radio" name="is_don" value="1" id="all" class="radio-inp" /> <label for="all">Tất cả</label>
+                            </span>
+                            <span class="radio-style">
+                                <input type="radio" name="is_don" value="1" id="thuoc" class="radio-inp" /> <label for="thuoc">Thuốc</label>
+                            </span>
+                            <span class="radio-style">
+                                <input type="radio" name="is_don" value="1" id="duoc_chat" class="radio-inp" /> <label for="duoc_chat">Dược chất</label>
+                            </span>
+                            <span class="radio-style">
+                                <input type="radio" name="is_don" value="1" id="duoc_lieu" class="radio-inp" /> <label for="duoc_lieu">Dược liệu</label>
+                            </span>
+                        </div>
+                    </div>   
+                </div>
+            </div>
+          </form>
+      </div>
+
+      <button class="button-accept btn-modal" data-bs-toggle="modal" data-bs-target="#login_form">Đăng nhập</button>
+      
+      <div class="header__otherbutton">
+        <p class="header__otherbutton--img">
+          <img  src="./img/hambergar.png" alt="9 dots" />
+        </p>
+        <div class="header__otherbutton--text">
+          <p>Tra cứu</p>
+          <p>Lịch sử đơn hàng</p>
+          
+          <div class="menu-order">
+            <ul>
+                <li><a href="#">Đơn hàng của tôi</a></li>
+                <li><a href="#">Thoát tài khoản</a></li>
+            </ul>
+          </div>
+          
+        </div>
+        <div class="mini-line"></div>
+        <div class="header__cart">
+          <div class="header__cart--img">
+            <p class="header__cart--icon"> 
+              <img src="./img/svg/cartheader.svg" alt="cart to add" />
+            </p>
+            <span class="circle-tick">3</span>
+          </div>
+
+          <p class="cart-alone">Giỏ hàng</p>
+        </div>
+      </div>
+    </div>
+    
+    <div class="container">
+        <div class="search for-mobile">
+          <form action="#" class="search-form search-form-main">
+            <div class="search-form-wrap search-form-wrap-main">
+                <input type="text" class="search__input" placeholder="Tìm sản phẩm" />
+                <button class="search__button">
+                  <i class="search__icon fa-solid fa-magnifying-glass"></i>
+                </button>
+            </div>
+            <div class="search-suggest">
+                <div class="search-box search-1">
+                    <div class="search-title">Tìm kiếm nhiều nhất</div>
+                    <ul class="search-links">
+                        <li><a href="#">Panadol</a></li>
+                        <li><a href="#">Vitamin</a></li>
+                        <li><a href="#">Khẩu trang</a></li>
+                        <li><a href="#">Panadol</a></li>
+                        <li><a href="#">SpO2</a></li>
+                        <li><a href="#">Panadol</a></li>
+                        <li><a href="#">Vitamin</a></li>
+                        <li><a href="#">Panadol</a></li>
+                    </ul>    
+                </div>
+                <div class="search-box search-2">
+                    <ul class="search-top">
+                        <li>Thuốc ho</li>
+                        <li>Thuốc cảm cúm</li>
+                        <li>Thuốc bổ</li>
+                        <li>Thuốc đau đầu</li>
+                    </ul>
+                    <div class="search-line"><span>Sản phẩm được tìm nhiều</span></div>
+                    <ul class="search-bottom">
+                        <li>
+                            <div class="search-thumb">
+                                <img alt="" src="img/s1.png" />
+                            </div>
+                            <div class="search-right">
+                                <span class="search-product-subtitle">Thuốc</span>
+                                <span class="search-product-title">Thuốc ho bổ phế Trường Bách Diệp 125 Ml</span>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="search-thumb">
+                                <img alt="" src="img/s2.png" />
+                            </div>
+                            <div class="search-right">
+                                <span class="search-product-subtitle">Thuốc</span>
+                                <span class="search-product-title">Thuốc ho bổ phế Trường Bách Diệp 125 Ml</span>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="search-thumb">
+                                <img alt="" src="img/s3.png" />
+                            </div>
+                            <div class="search-right">
+                                <span class="search-product-subtitle">Thuốc</span>
+                                <span class="search-product-title">Thuốc ho bổ phế Trường Bách Diệp 125 Ml</span>
+                            </div>
+                        </li>
+                    </ul>
+                    <div class="search-all"><a href="#">Xem tất cả</a></div>     
+                </div>
+            </div>
+          </form>
+          <button class="button-open"><i class=" fa-solid fa-bars"></i></button>
+        </div>
+    </div>
+  
+</header>
+
+<div class="menu-wrap">
+    <div class="container">
+        <div class="main-nav">
+            <ul class="choosen-health">
+                <li>
+                    <a href="#">
+                      <span>Thực phẩm Chức Năng</span>
+                      <img class="dropdown-icon" src="./img/svg/dropdown.svg" alt="dropdown" />
+                    </a>
+                    <div class="sub-menu">
+                        <div class="sub-menu-grid">
+                            <div class="sub-menu-left">
+                                <ul class="menu-title">
+                                    <li class="active">
+                                        <a href="#">
+                                            <img alt="" src="img/svg/sinh-ly.svg" width="40px" height="40px" />
+                                            <span>Sinh lý - Nội tiết tố</span>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#">
+                                            <img alt="" src="img/svg/tim-mach.svg" width="40px" height="40px" />
+                                            <span>Sức khoẻ tim mạch</span>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#">
+                                            <img alt="" src="img/svg/tieu-hoa.svg" width="40px" height="40px" />
+                                            <span>Hỗ trợ tiêu hoá</span>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#">
+                                            <img alt="" src="img/svg/than-kinh.svg" width="40px" height="40px" />
+                                            <span>Thần kinh não</span>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#">
+                                            <img alt="" src="img/svg/hotro-dieu-tri.svg" width="40px" height="40px" />
+                                            <span>Hỗ trợ điều trị</span>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#">
+                                            <img alt="" src="img/svg/tang-cuong-chuc-nang.svg" width="40px" height="40px" />
+                                            <span>Cải thiện tăng cường chức năng</span>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#">
+                                            <img alt="" src="img/svg/thao-duoc.svg" width="40px" height="40px" />
+                                            <span>Thảo dược và thực phẩm tự nhiên</span>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#">
+                                            <img alt="" src="img/svg/lam-dep.svg" width="40px" height="40px" />
+                                            <span>Hỗ trợ làm đẹp</span>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#">
+                                            <img alt="" src="img/svg/vitamin.svg" width="40px" height="40px" />
+                                            <span>Vitamin và khoáng chất</span>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#">
+                                            <img alt="" src="img/svg/dinh-duong.svg" width="40px" height="40px" />
+                                            <span>Dinh dưỡng</span>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="sub-menu-right">
+                                <div class="menu-buttons">
+                                    <div class="nav-btn">
+                                        <div class="btn-item active"><a href="#">Sinh lý nam</a></div>
+                                        <div class="btn-item"><a href="#">Sinh lý nữ</a></div>
+                                        <div class="btn-item"><a href="#">Hỗ trợ mãn kinh</a></div>
+                                        <div class="btn-item"><a href="#">Cân bằng nội tiết tố</a></div>
+                                        <div class="btn-item"><a href="#">Sức khoẻ tình dục</a></div>
+                                        <div class="btn-item"><a href="#">Sức khoẻ</a></div>
+                                    </div>
+                                </div>
+                                <div class="menu-product">
+                                    <div class="nav-product-title">
+                                        <div class="nav-title-left"><img alt="" src="img/svg/4dot-icon.svg" width="27px" height="27px" />Sản Phẩm bán chạy</div>
+                                        <div class="nav-title-right"><a href="#">Xem tất cả</a></div>
+                                    </div>
+                                    <div class="menu-product-grid">
+                                        <div class="menu-product-item">
+                                            <div class="pharmacy__bestsale--cover pharmacy__bestsale--style-1">
+                                                <div class="pharmacy-thumb">
+                                                    <a href=""><img src="./img/einsprodukt.png" alt="first product" /></a>
+                                                </div>
+                                                <div class="pharmacy__bestsale--include fix-size">
+                                                  <a class="pharmacy__bestsale--functionalfood" href="#">Thực phẩm chức năng</a>
+                                                  <a class="pharmacy__bestsale--title" href="#">Viên Uống Sâm Nhung Bổ Thận Nv Dolexpharm Giúp Tráng...</a>
+                                                  <div class="pharmacy__bestsale--price">
+                                                    110.00
+                                                    <p>/hộp</p>
+                                                  </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="menu-product-item">
+                                            <div class="pharmacy__bestsale--cover pharmacy__bestsale--style-1">
+                                                <div class="pharmacy-thumb">
+                                                    <a href=""><img src="./img/zweiprodukt.png" alt="second product" /></a>
+                                                </div>
+                                                <div class="pharmacy__bestsale--include  fix-size">
+                                                  <a class="pharmacy__bestsale--functionalfood" href="#"
+                                                    >Thực phẩm chức năng</a
+                                                  >
+                                                  <a class="pharmacy__bestsale--title" href="#"
+                                                    >Viên Uống Sâm Nhung Bổ Thận Nv Dolexpharm Giúp Tráng
+                                                    ...</a
+                                                  >
+                                                  <div class="pharmacy__bestsale--price">
+                                                    110.00
+                                                    <p>/hộp</p>
+                                                  </div>
+                                                </div>
+                                              </div>
+                                        </div>
+                                        <div class="menu-product-item">
+                                            <div class="pharmacy__bestsale--cover pharmacy__bestsale--style-1">
+                                                <div class="pharmacy-thumb">
+                                                    <a href=""><img src="./img/dreiprodukt.png" alt="first product" /></a>
+                                                </div>
+                                                <div class="pharmacy__bestsale--include fix-size">
+                                                  <a class="pharmacy__bestsale--functionalfood" href="#"
+                                                    >Thực phẩm chức năng</a
+                                                  >
+                                                  <a class="pharmacy__bestsale--title" href="#"
+                                                    >Viên Uống Sâm Nhung Bổ Thận Nv Dolexpharm Giúp Tráng
+                                                    ...</a
+                                                  >
+                                                  <div class="pharmacy__bestsale--price">
+                                                    110.00
+                                                    <p>/hộp</p>
+                                                  </div>
+                                                </div>
+                                              </div>
+                                        </div>
+                                        <div class="menu-product-item">
+                                            <div class="pharmacy__bestsale--cover pharmacy__bestsale--style-1">
+                                                <div class="pharmacy-thumb">
+                                                    <a href=""><img src="./img/einsprodukt.png" alt="first product" /></a>
+                                                </div>
+                                                <div class="pharmacy__bestsale--include">
+                                                  <a class="pharmacy__bestsale--functionalfood" href="#"
+                                                    >Thực phẩm chức năng</a
+                                                  >
+                                                  <a class="pharmacy__bestsale--title" href="#"
+                                                    >Viên Uống Sâm Nhung Bổ Thận Nv Dolexpharm Giúp Tráng
+                                                    ...</a
+                                                  >
+                                                  <div class="pharmacy__bestsale--price">
+                                                    110.00
+                                                    <p>/hộp</p>
+                                                  </div>
+                                                </div>
+                                              </div>
+                                        </div>
+                                        <div class="menu-product-item">
+                                            <div class="pharmacy__bestsale--cover pharmacy__bestsale--style-1">
+                                                <div class="pharmacy-thumb">
+                                                    <a href=""><img src="./img/einsprodukt.png" alt="first product" /></a>
+                                                </div>
+                                                <div class="pharmacy__bestsale--include fix-size">
+                                                  <a class="pharmacy__bestsale--functionalfood" href="#"
+                                                    >Thực phẩm chức năng</a
+                                                  >
+                                                  <a class="pharmacy__bestsale--title" href="#"
+                                                    >Viên Uống Sâm Nhung Bổ Thận Nv Dolexpharm Giúp Tráng
+                                                    ...</a
+                                                  >
+                                                  <div class="pharmacy__bestsale--price">
+                                                    110.00
+                                                    <p>/hộp</p>
+                                                  </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+            </li>
+            <li>
+                <a href="#">
+                  <span>Dược Mỹ Phẩm</span>
+                  <img class="dropdown-icon" src="./img/svg/dropdown.svg" alt="dropdown" />
+                </a>
+            </li>
+            <li>
+                <a href="#">
+                  <span>Thiết bị y tế</span>
+                  <img class="dropdown-icon" src="./img/svg/dropdown.svg" alt="dropdown" />
+                </a>
+            </li>
+            <li>
+                <a href="#">
+                  <span>Chăm sóc cá nhân</span>
+                  <img class="dropdown-icon" src="./img/svg/dropdown.svg" alt="dropdown" />
+                </a>
+            </li>
+            <li>
+                <a href="#">
+                  <span>Thuốc</span>
+                  <img class="dropdown-icon" src="./img/svg/dropdown.svg" alt="dropdown" />
+                </a>
+            </li>
+            <li>
+                <a href="#">
+                  <span>Bản tin sức khoẻ</span>
+                  <img class="dropdown-icon" src="./img/svg/dropdown.svg" alt="dropdown" />
+                </a>
+            </li>
+          </ul>
+        </div>
+        
+        <div class="choosen-health__tablet-mobile">
+        
+          <div class="nav-button-close"><button class="button-close"><i class="fa-solid fa-xmark"></i></button></div>
+          
+          <div class="nav-mobile-wrap">
+              <ul class="nav-mobile">
+                <li class="has-dropdown">
+                    <a href="">Thuốc</a>
+                    <ul class="dropdown">
+                        <li><a href="#">Sinh lý nam</a></li>
+                        <li><a href="#">Sinh lý nữ</a></li>
+                        <li><a href="#">Hỗ trợ mãn kinh</a></li>
+                        <li><a href="#">Cân bằng nội tiết tố</a></li>
+                        <li><a href="#">Sức khoẻ tình dục</a></li>
+                        <li><a href="#">Sức khoẻ</a></li>
+                    </ul>
+                </li>
+                <li class="has-dropdown">
+                    <a href="">Thực phẩm Chức Năng</a>
+                    <ul class="dropdown">
+                        <li><a href="#">Sinh lý nam</a></li>
+                        <li><a href="#">Sinh lý nữ</a></li>
+                        <li><a href="#">Hỗ trợ mãn kinh</a></li>
+                        <li><a href="#">Cân bằng nội tiết tố</a></li>
+                        <li><a href="#">Sức khoẻ tình dục</a></li>
+                        <li><a href="#">Sức khoẻ</a></li>
+                    </ul>
+                </li>
+                <li class="has-dropdown">
+                    <a href="">Dược Mỹ Phẩm</a>
+                    <ul class="dropdown">
+                        <li><a href="#">Sinh lý nam</a></li>
+                        <li><a href="#">Sinh lý nữ</a></li>
+                        <li><a href="#">Hỗ trợ mãn kinh</a></li>
+                        <li><a href="#">Cân bằng nội tiết tố</a></li>
+                        <li><a href="#">Sức khoẻ tình dục</a></li>
+                        <li><a href="#">Sức khoẻ</a></li>
+                    </ul>
+                </li>
+                <li class="has-dropdown">
+                    <a href="">Thiết bị y tế</a>
+                    <ul class="dropdown">
+                        <li><a href="#">Sinh lý nam</a></li>
+                        <li><a href="#">Sinh lý nữ</a></li>
+                        <li><a href="#">Hỗ trợ mãn kinh</a></li>
+                        <li><a href="#">Cân bằng nội tiết tố</a></li>
+                        <li><a href="#">Sức khoẻ tình dục</a></li>
+                        <li><a href="#">Sức khoẻ</a></li>
+                    </ul>
+                </li>
+                <li class="has-dropdown">
+                    <a href="">Chăm sóc cá nhân</a>
+                    <ul class="dropdown">
+                        <li><a href="#">Sinh lý nam</a></li>
+                        <li><a href="#">Sinh lý nữ</a></li>
+                        <li><a href="#">Hỗ trợ mãn kinh</a></li>
+                        <li><a href="#">Cân bằng nội tiết tố</a></li>
+                        <li><a href="#">Sức khoẻ tình dục</a></li>
+                        <li><a href="#">Sức khoẻ</a></li>
+                    </ul>
+                </li>
+                <li class="has-dropdown">
+                    <a href="">Bản tin sức khoẻ</a>
+                    <ul class="dropdown">
+                        <li><a href="#">Sinh lý nam</a></li>
+                        <li><a href="#">Sinh lý nữ</a></li>
+                        <li><a href="#">Hỗ trợ mãn kinh</a></li>
+                        <li><a href="#">Cân bằng nội tiết tố</a></li>
+                        <li><a href="#">Sức khoẻ tình dục</a></li>
+                        <li><a href="#">Sức khoẻ</a></li>
+                    </ul>
+                </li>
+              </ul>
+          </div>
+        </div>
+    </div>
+</div>
+  
+<main class="main">
+    <div class="sc">
+        <div class="container">
+            <div class="pharmacy__tag">
+                <h2 class="pharmacy__title">Mua thuốc dễ dàng</h2>
+        
+                <div class="pharmacy__easytobuy">
+                    <div class="pharmacy__easytobuy--advise">
+                      <div class="pharmacy__easytobuy--card">
+                        <img class="pharmacy__easytobuy--img" src="./img/holdinghansy.png" alt="telephone" />
+                        <div class="pharmacy__easytobuy--title">
+                          <h3>Chụp toa thuốc</h3>
+                          <p>đơn giản & nhanh chóng</p>
+                        </div>
+                      </div>
+                      <div class="pharmacy__easytobuy--card">
+                        <img class="pharmacy__easytobuy--img" src="./img/svg/dasDokument.svg" alt="document" />
+                        <div class="pharmacy__easytobuy--title">
+                          <h3>Nhập thông tin liên hệ</h3>
+                          <p>đơn giản & nhanh chóng</p>
+                        </div>
+                      </div>
+                      <div class="pharmacy__easytobuy--card">
+                        <img class="pharmacy__easytobuy--img" src="./img/derArzt.png" alt="Doctor" />
+                        <div class="pharmacy__easytobuy--title">
+                          <h3>Nhận báo giá từ dược sỹ</h3>
+                          <p>đơn giản & nhanh chóng</p>
+                        </div>
+                      </div>
+                    </div>
+                
+                    <div class="pharmacy__easytobuy--buynow">
+                      <h2>Bạn có thể mua thuốc ngay tại đây</h2>
+                      <div class="pharmacy__easytobuy--contact">
+                        <button class="buynow button">Mua thuốc ngay</button>
+                        <button class="hotline button">
+                          Hotline <a href="tel:0939129889">0939129889</a>
+                        </button>
+                      </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <div class="sc sc-bottom">
+        <div class="container">
+            <h2 class="sc-title-2">Thuốc theo nhóm trị liệu</h2>
+            <div class="row">
+                <div class="col-md-4">
+                    <div class="nhom-tri-lieu">
+                        <div class="tri-lieu">
+                            <div class="thead thead-dropdown">
+                                <div class="thead-icon"><img alt="" src="img/svg/tieu-hoa.svg" width="56px" height="56px"></div>
+                                <div class="thead-text">
+                                    <h6>Hệ tiêu hoá & gan mật</h6>
+                                    <p>742 sản phẩm</p>
+                                </div>    
+                            </div>
+                            <div class="tbody">
+                                <ul>
+                                    <li><a href="">Thuốc chống nôn</a></li>
+                                    <li><a href="">Thuốc điều hoà tiêu hoá, chống đầy hơi & kháng viêm</a></li>
+                                    <li><a href="">Thuốc kháng acid, chống trào ngược & chống loét</a></li>
+                                    <li><a href="">Thuốc trị tiêu chảy</a></li>
+                                    <li><a href="">Thuốc thông mật, tan sỏi mật & bảo vệ gan</a></li>
+                                    <li><a href="">Thuốc trợ tiêu hóa</a></li>
+                                    <li><a href="">Thuốc trị bệnh vùng hậu môn trực tràng</a></li>
+                                    <li><a href="">Thuốc đối kháng H2</a></li>
+                                    <li><a href="">Thuốc nhuận trường, thuốc xổ</a></li>
+                                    <li><a href="">Các thuốc tiêu hóa khác</a></li>
+                                    <li><a href="">Thuốc chống co thắt</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="tri-lieu">
+                            <div class="thead thead-dropdown">
+                                <div class="thead-icon"><img alt="" src="img/svg/tieu-hoa.svg" width="56px" height="56px"></div>
+                                <div class="thead-text">
+                                    <h6>Hệ thần kinh trung ương</h6>
+                                    <p>742 sản phẩm</p>
+                                </div>    
+                            </div>
+                            <div class="tbody">
+                                <ul>
+                                    <li><a href="">Thuốc chống nôn</a></li>
+                                    <li><a href="">Thuốc điều hoà tiêu hoá, chống đầy hơi & kháng viêm</a></li>
+                                    <li><a href="">Thuốc kháng acid, chống trào ngược & chống loét</a></li>
+                                    <li><a href="">Thuốc trị tiêu chảy</a></li>
+                                    <li><a href="">Thuốc thông mật, tan sỏi mật & bảo vệ gan</a></li>
+                                    <li><a href="">Thuốc trợ tiêu hóa</a></li>
+                                    <li><a href="">Thuốc trị bệnh vùng hậu môn trực tràng</a></li>
+                                    <li><a href="">Thuốc đối kháng H2</a></li>
+                                    <li><a href="">Thuốc nhuận trường, thuốc xổ</a></li>
+                                    <li><a href="">Các thuốc tiêu hóa khác</a></li>
+                                    <li><a href="">Thuốc chống co thắt</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="tri-lieu">
+                            <div class="thead thead-dropdown">
+                                <div class="thead-icon"><img alt="" src="img/svg/tang-cuong-chuc-nang.svg" width="56px" height="56px"></div>
+                                <div class="thead-text">
+                                    <h6>Thuốc ngừa thai</h6>
+                                    <p>742 sản phẩm</p>
+                                </div>    
+                            </div>
+                            <div class="tbody">
+                                <ul>
+                                    <li><a href="">Thuốc chống nôn</a></li>
+                                    <li><a href="">Thuốc điều hoà tiêu hoá, chống đầy hơi & kháng viêm</a></li>
+                                    <li><a href="">Thuốc kháng acid, chống trào ngược & chống loét</a></li>
+                                    <li><a href="">Thuốc trị tiêu chảy</a></li>
+                                    <li><a href="">Thuốc thông mật, tan sỏi mật & bảo vệ gan</a></li>
+                                    <li><a href="">Thuốc trợ tiêu hóa</a></li>
+                                    <li><a href="">Thuốc trị bệnh vùng hậu môn trực tràng</a></li>
+                                    <li><a href="">Thuốc đối kháng H2</a></li>
+                                    <li><a href="">Thuốc nhuận trường, thuốc xổ</a></li>
+                                    <li><a href="">Các thuốc tiêu hóa khác</a></li>
+                                    <li><a href="">Thuốc chống co thắt</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="tri-lieu">
+                            <div class="thead thead-dropdown">
+                                <div class="thead-icon"><img alt="" src="img/svg/hotro-dieu-tri.svg" width="56px" height="56px"></div>
+                                <div class="thead-text">
+                                    <h6>Hệ nội tiết & chuyển hóa</h6>
+                                    <p>742 sản phẩm</p>
+                                </div>    
+                            </div>
+                            <div class="tbody">
+                                <ul>
+                                    <li><a href="">Thuốc chống nôn</a></li>
+                                    <li><a href="">Thuốc điều hoà tiêu hoá, chống đầy hơi & kháng viêm</a></li>
+                                    <li><a href="">Thuốc kháng acid, chống trào ngược & chống loét</a></li>
+                                    <li><a href="">Thuốc trị tiêu chảy</a></li>
+                                    <li><a href="">Thuốc thông mật, tan sỏi mật & bảo vệ gan</a></li>
+                                    <li><a href="">Thuốc trợ tiêu hóa</a></li>
+                                    <li><a href="">Thuốc trị bệnh vùng hậu môn trực tràng</a></li>
+                                    <li><a href="">Thuốc đối kháng H2</a></li>
+                                    <li><a href="">Thuốc nhuận trường, thuốc xổ</a></li>
+                                    <li><a href="">Các thuốc tiêu hóa khác</a></li>
+                                    <li><a href="">Thuốc chống co thắt</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="tri-lieu last">
+                            <div class="thead thead-dropdown">
+                                <div class="thead-icon"><img alt="" src="img/svg/ic-noi-tiet.svg" width="56px" height="56px"></div>
+                                <div class="thead-text">
+                                    <h6>Hệ nội tiết & chuyển hóa</h6>
+                                    <p>742 sản phẩm</p>
+                                </div>    
+                            </div>
+                            <div class="tbody">
+                                <ul>
+                                    <li><a href="">Thuốc chống nôn</a></li>
+                                    <li><a href="">Thuốc điều hoà tiêu hoá, chống đầy hơi & kháng viêm</a></li>
+                                    <li><a href="">Thuốc kháng acid, chống trào ngược & chống loét</a></li>
+                                    <li><a href="">Thuốc trị tiêu chảy</a></li>
+                                    <li><a href="">Thuốc thông mật, tan sỏi mật & bảo vệ gan</a></li>
+                                    <li><a href="">Thuốc trợ tiêu hóa</a></li>
+                                    <li><a href="">Thuốc trị bệnh vùng hậu môn trực tràng</a></li>
+                                    <li><a href="">Thuốc đối kháng H2</a></li>
+                                    <li><a href="">Thuốc nhuận trường, thuốc xổ</a></li>
+                                    <li><a href="">Các thuốc tiêu hóa khác</a></li>
+                                    <li><a href="">Thuốc chống co thắt</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="nhom-tri-lieu">
+                        <div class="tri-lieu">
+                            <div class="thead thead-dropdown">
+                                <div class="thead-icon"><img alt="" src="img/svg/tieu-hoa.svg" width="56px" height="56px"></div>
+                                <div class="thead-text">
+                                    <h6>Hệ tim mạch & tạo máu</h6>
+                                    <p>742 sản phẩm</p>
+                                </div>    
+                            </div>
+                            <div class="tbody">
+                                <ul>
+                                    <li><a href="">Thuốc chống nôn</a></li>
+                                    <li><a href="">Thuốc điều hoà tiêu hoá, chống đầy hơi & kháng viêm</a></li>
+                                    <li><a href="">Thuốc kháng acid, chống trào ngược & chống loét</a></li>
+                                    <li><a href="">Thuốc trị tiêu chảy</a></li>
+                                    <li><a href="">Thuốc thông mật, tan sỏi mật & bảo vệ gan</a></li>
+                                    <li><a href="">Thuốc trợ tiêu hóa</a></li>
+                                    <li><a href="">Thuốc trị bệnh vùng hậu môn trực tràng</a></li>
+                                    <li><a href="">Thuốc đối kháng H2</a></li>
+                                    <li><a href="">Thuốc nhuận trường, thuốc xổ</a></li>
+                                    <li><a href="">Các thuốc tiêu hóa khác</a></li>
+                                    <li><a href="">Thuốc chống co thắt</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="tri-lieu">
+                            <div class="thead thead-dropdown">
+                                <div class="thead-icon"><img alt="" src="img/svg/ic-co-xuong.svg" width="56px" height="56px"></div>
+                                <div class="thead-text">
+                                    <h6>Hệ cơ - xương</h6>
+                                    <p>742 sản phẩm</p>
+                                </div>    
+                            </div>
+                            <div class="tbody">
+                                <ul>
+                                    <li><a href="">Thuốc chống nôn</a></li>
+                                    <li><a href="">Thuốc điều hoà tiêu hoá, chống đầy hơi & kháng viêm</a></li>
+                                    <li><a href="">Thuốc kháng acid, chống trào ngược & chống loét</a></li>
+                                    <li><a href="">Thuốc trị tiêu chảy</a></li>
+                                    <li><a href="">Thuốc thông mật, tan sỏi mật & bảo vệ gan</a></li>
+                                    <li><a href="">Thuốc trợ tiêu hóa</a></li>
+                                    <li><a href="">Thuốc trị bệnh vùng hậu môn trực tràng</a></li>
+                                    <li><a href="">Thuốc đối kháng H2</a></li>
+                                    <li><a href="">Thuốc nhuận trường, thuốc xổ</a></li>
+                                    <li><a href="">Các thuốc tiêu hóa khác</a></li>
+                                    <li><a href="">Thuốc chống co thắt</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="tri-lieu">
+                            <div class="thead thead-dropdown">
+                                <div class="thead-icon"><img alt="" src="img/svg/tang-cuong-chuc-nang.svg" width="56px" height="56px"></div>
+                                <div class="thead-text">
+                                    <h6>Thuốc kháng sinh</h6>
+                                    <p>742 sản phẩm</p>
+                                </div>    
+                            </div>
+                            <div class="tbody">
+                                <ul>
+                                    <li><a href="">Thuốc chống nôn</a></li>
+                                    <li><a href="">Thuốc điều hoà tiêu hoá, chống đầy hơi & kháng viêm</a></li>
+                                    <li><a href="">Thuốc kháng acid, chống trào ngược & chống loét</a></li>
+                                    <li><a href="">Thuốc trị tiêu chảy</a></li>
+                                    <li><a href="">Thuốc thông mật, tan sỏi mật & bảo vệ gan</a></li>
+                                    <li><a href="">Thuốc trợ tiêu hóa</a></li>
+                                    <li><a href="">Thuốc trị bệnh vùng hậu môn trực tràng</a></li>
+                                    <li><a href="">Thuốc đối kháng H2</a></li>
+                                    <li><a href="">Thuốc nhuận trường, thuốc xổ</a></li>
+                                    <li><a href="">Các thuốc tiêu hóa khác</a></li>
+                                    <li><a href="">Thuốc chống co thắt</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="tri-lieu">
+                            <div class="thead thead-dropdown">
+                                <div class="thead-icon"><img alt="" src="img/svg/dinh-duong.svg" width="56px" height="56px"></div>
+                                <div class="thead-text">
+                                    <h6>Dị ứng & hệ miễn dịch</h6>
+                                    <p>742 sản phẩm</p>
+                                </div>    
+                            </div>
+                            <div class="tbody">
+                                <ul>
+                                    <li><a href="">Thuốc chống nôn</a></li>
+                                    <li><a href="">Thuốc điều hoà tiêu hoá, chống đầy hơi & kháng viêm</a></li>
+                                    <li><a href="">Thuốc kháng acid, chống trào ngược & chống loét</a></li>
+                                    <li><a href="">Thuốc trị tiêu chảy</a></li>
+                                    <li><a href="">Thuốc thông mật, tan sỏi mật & bảo vệ gan</a></li>
+                                    <li><a href="">Thuốc trợ tiêu hóa</a></li>
+                                    <li><a href="">Thuốc trị bệnh vùng hậu môn trực tràng</a></li>
+                                    <li><a href="">Thuốc đối kháng H2</a></li>
+                                    <li><a href="">Thuốc nhuận trường, thuốc xổ</a></li>
+                                    <li><a href="">Các thuốc tiêu hóa khác</a></li>
+                                    <li><a href="">Thuốc chống co thắt</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="tri-lieu last">
+                            <div class="thead thead-dropdown">
+                                <div class="thead-icon"><img alt="" src="img/svg/ic-noi-tiet.svg" width="56px" height="56px"></div>
+                                <div class="thead-text">
+                                    <h6>Tai & Miệng / Họng</h6>
+                                    <p>742 sản phẩm</p>
+                                </div>    
+                            </div>
+                            <div class="tbody">
+                                <ul>
+                                    <li><a href="">Thuốc chống nôn</a></li>
+                                    <li><a href="">Thuốc điều hoà tiêu hoá, chống đầy hơi & kháng viêm</a></li>
+                                    <li><a href="">Thuốc kháng acid, chống trào ngược & chống loét</a></li>
+                                    <li><a href="">Thuốc trị tiêu chảy</a></li>
+                                    <li><a href="">Thuốc thông mật, tan sỏi mật & bảo vệ gan</a></li>
+                                    <li><a href="">Thuốc trợ tiêu hóa</a></li>
+                                    <li><a href="">Thuốc trị bệnh vùng hậu môn trực tràng</a></li>
+                                    <li><a href="">Thuốc đối kháng H2</a></li>
+                                    <li><a href="">Thuốc nhuận trường, thuốc xổ</a></li>
+                                    <li><a href="">Các thuốc tiêu hóa khác</a></li>
+                                    <li><a href="">Thuốc chống co thắt</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="nhom-tri-lieu">
+                        <div class="tri-lieu">
+                            <div class="thead thead-dropdown">
+                                <div class="thead-icon"><img alt="" src="img/svg/tieu-hoa.svg" width="56px" height="56px"></div>
+                                <div class="thead-text">
+                                    <h6>Hệ hô hấp</h6>
+                                    <p>742 sản phẩm</p>
+                                </div>    
+                            </div>
+                            <div class="tbody">
+                                <ul>
+                                    <li><a href="">Thuốc chống nôn</a></li>
+                                    <li><a href="">Thuốc điều hoà tiêu hoá, chống đầy hơi & kháng viêm</a></li>
+                                    <li><a href="">Thuốc kháng acid, chống trào ngược & chống loét</a></li>
+                                    <li><a href="">Thuốc trị tiêu chảy</a></li>
+                                    <li><a href="">Thuốc thông mật, tan sỏi mật & bảo vệ gan</a></li>
+                                    <li><a href="">Thuốc trợ tiêu hóa</a></li>
+                                    <li><a href="">Thuốc trị bệnh vùng hậu môn trực tràng</a></li>
+                                    <li><a href="">Thuốc đối kháng H2</a></li>
+                                    <li><a href="">Thuốc nhuận trường, thuốc xổ</a></li>
+                                    <li><a href="">Các thuốc tiêu hóa khác</a></li>
+                                    <li><a href="">Thuốc chống co thắt</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="tri-lieu">
+                            <div class="thead thead-dropdown">
+                                <div class="thead-icon"><img alt="" src="img/svg/ic-ruot.svg" width="56px" height="56px"></div>
+                                <div class="thead-text">
+                                    <h6>Hormon (Nội tiết tố)</h6>
+                                    <p>742 sản phẩm</p>
+                                </div>    
+                            </div>
+                            <div class="tbody">
+                                <ul>
+                                    <li><a href="">Thuốc chống nôn</a></li>
+                                    <li><a href="">Thuốc điều hoà tiêu hoá, chống đầy hơi & kháng viêm</a></li>
+                                    <li><a href="">Thuốc kháng acid, chống trào ngược & chống loét</a></li>
+                                    <li><a href="">Thuốc trị tiêu chảy</a></li>
+                                    <li><a href="">Thuốc thông mật, tan sỏi mật & bảo vệ gan</a></li>
+                                    <li><a href="">Thuốc trợ tiêu hóa</a></li>
+                                    <li><a href="">Thuốc trị bệnh vùng hậu môn trực tràng</a></li>
+                                    <li><a href="">Thuốc đối kháng H2</a></li>
+                                    <li><a href="">Thuốc nhuận trường, thuốc xổ</a></li>
+                                    <li><a href="">Các thuốc tiêu hóa khác</a></li>
+                                    <li><a href="">Thuốc chống co thắt</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="tri-lieu">
+                            <div class="thead thead-dropdown">
+                                <div class="thead-icon"><img alt="" src="img/svg/tang-cuong-chuc-nang.svg" width="56px" height="56px"></div>
+                                <div class="thead-text">
+                                    <h6>Hệ tiết niệu-sinh dục</h6>
+                                    <p>742 sản phẩm</p>
+                                </div>    
+                            </div>
+                            <div class="tbody">
+                                <ul>
+                                    <li><a href="">Thuốc chống nôn</a></li>
+                                    <li><a href="">Thuốc điều hoà tiêu hoá, chống đầy hơi & kháng viêm</a></li>
+                                    <li><a href="">Thuốc kháng acid, chống trào ngược & chống loét</a></li>
+                                    <li><a href="">Thuốc trị tiêu chảy</a></li>
+                                    <li><a href="">Thuốc thông mật, tan sỏi mật & bảo vệ gan</a></li>
+                                    <li><a href="">Thuốc trợ tiêu hóa</a></li>
+                                    <li><a href="">Thuốc trị bệnh vùng hậu môn trực tràng</a></li>
+                                    <li><a href="">Thuốc đối kháng H2</a></li>
+                                    <li><a href="">Thuốc nhuận trường, thuốc xổ</a></li>
+                                    <li><a href="">Các thuốc tiêu hóa khác</a></li>
+                                    <li><a href="">Thuốc chống co thắt</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="tri-lieu">
+                            <div class="thead thead-dropdown">
+                                <div class="thead-icon"><img alt="" src="img/svg/ic-sinh-duc.svg" width="56px" height="56px"></div>
+                                <div class="thead-text">
+                                    <h6>Hệ tiết niệu-sinh dục</h6>
+                                    <p>742 sản phẩm</p>
+                                </div>    
+                            </div>
+                            <div class="tbody">
+                                <ul>
+                                    <li><a href="">Thuốc chống nôn</a></li>
+                                    <li><a href="">Thuốc điều hoà tiêu hoá, chống đầy hơi & kháng viêm</a></li>
+                                    <li><a href="">Thuốc kháng acid, chống trào ngược & chống loét</a></li>
+                                    <li><a href="">Thuốc trị tiêu chảy</a></li>
+                                    <li><a href="">Thuốc thông mật, tan sỏi mật & bảo vệ gan</a></li>
+                                    <li><a href="">Thuốc trợ tiêu hóa</a></li>
+                                    <li><a href="">Thuốc trị bệnh vùng hậu môn trực tràng</a></li>
+                                    <li><a href="">Thuốc đối kháng H2</a></li>
+                                    <li><a href="">Thuốc nhuận trường, thuốc xổ</a></li>
+                                    <li><a href="">Các thuốc tiêu hóa khác</a></li>
+                                    <li><a href="">Thuốc chống co thắt</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="tri-lieu last">
+                            <div class="thead thead-dropdown">
+                                <div class="thead-icon"><img alt="" src="img/svg/lam-dep.svg" width="56px" height="56px"></div>
+                                <div class="thead-text">
+                                    <h6>Thuốc da liễu</h6>
+                                    <p>742 sản phẩm</p>
+                                </div>    
+                            </div>
+                            <div class="tbody">
+                                <ul>
+                                    <li><a href="">Thuốc chống nôn</a></li>
+                                    <li><a href="">Thuốc điều hoà tiêu hoá, chống đầy hơi & kháng viêm</a></li>
+                                    <li><a href="">Thuốc kháng acid, chống trào ngược & chống loét</a></li>
+                                    <li><a href="">Thuốc trị tiêu chảy</a></li>
+                                    <li><a href="">Thuốc thông mật, tan sỏi mật & bảo vệ gan</a></li>
+                                    <li><a href="">Thuốc trợ tiêu hóa</a></li>
+                                    <li><a href="">Thuốc trị bệnh vùng hậu môn trực tràng</a></li>
+                                    <li><a href="">Thuốc đối kháng H2</a></li>
+                                    <li><a href="">Thuốc nhuận trường, thuốc xổ</a></li>
+                                    <li><a href="">Các thuốc tiêu hóa khác</a></li>
+                                    <li><a href="">Thuốc chống co thắt</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div><!--end .row-->
+            <div class="more-tri-lieu text-center">
+                <a class="btn-1" href="#">Xem thêm</a>
+            </div>
+        </div>
+    </div>
+    
+    <div class="sc bg-orange">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4">
+                    <div class="thuoc-box">
+                        <h2 class="thuoc-box-title">Thuốc</h2>
+                        <ul>
+                            <li><a href="">Viên Sủi Berocca Bổ Sung Vitamin C (Tuýp 10 Viên)</a></li>
+                            <li><a href="">Thuốc Efferalgan 500Mg Upsa Sas Viên Sủi Trị Cúm, Đau Đầu, Đau Răng (Hộp 4 Vỉ X 4 Viên)</a></li>
+                            <li><a href="">Thuốc Medrol 16Mg Trị Rối Loạn Nội Tiết, Kháng Viêm, Dị Ứng</a></li>
+                            <li><a href="">Kem Trị Mụn Klenzit Ms Điều Trị Bệnh Trứng Cá (Tuýp 15G)</a></li>
+                            <li><a href="">Klenzit C Tuýp 15G Gel Trị Mụn Trứng Cá</a></li>
+                            <li><a href="">Thuốc Eugica Xanh Trị Ho Đờm, Cảm Cúm, Sổ Mũi (Hộp 10 Vỉ X 10 Viên)</a></li>
+                            <li><a href="">Thuốc Xarelto 10Mg Phòng Ngừa Đột Quỵ, Tắc Mạch (Hộp 10 Viên)</a></li>
+                        </ul>
+                        <div class="text-center">
+                            <a class="link-all" href="">Xem tất cả</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="thuoc-box">
+                        <h2 class="thuoc-box-title">Dược chất</h2>
+                        <ul>
+                            <li><a href="">Viên Sủi Berocca Bổ Sung Vitamin C (Tuýp 10 Viên)</a></li>
+                            <li><a href="">Thuốc Efferalgan 500Mg Upsa Sas Viên Sủi Trị Cúm, Đau Đầu, Đau Răng (Hộp 4 Vỉ X 4 Viên)</a></li>
+                            <li><a href="">Thuốc Medrol 16Mg Trị Rối Loạn Nội Tiết, Kháng Viêm, Dị Ứng</a></li>
+                            <li><a href="">Kem Trị Mụn Klenzit Ms Điều Trị Bệnh Trứng Cá (Tuýp 15G)</a></li>
+                            <li><a href="">Klenzit C Tuýp 15G Gel Trị Mụn Trứng Cá</a></li>
+                            <li><a href="">Thuốc Eugica Xanh Trị Ho Đờm, Cảm Cúm, Sổ Mũi (Hộp 10 Vỉ X 10 Viên)</a></li>
+                            <li><a href="">Thuốc Xarelto 10Mg Phòng Ngừa Đột Quỵ, Tắc Mạch (Hộp 10 Viên)</a></li>
+                        </ul>
+                        <div class="text-center">
+                            <a class="link-all" href="">Xem tất cả</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="thuoc-box">
+                        <h2 class="thuoc-box-title">Dược liệu</h2>
+                        <ul>
+                            <li><a href="">Viên Sủi Berocca Bổ Sung Vitamin C (Tuýp 10 Viên)</a></li>
+                            <li><a href="">Thuốc Efferalgan 500Mg Upsa Sas Viên Sủi Trị Cúm, Đau Đầu, Đau Răng (Hộp 4 Vỉ X 4 Viên)</a></li>
+                            <li><a href="">Thuốc Medrol 16Mg Trị Rối Loạn Nội Tiết, Kháng Viêm, Dị Ứng</a></li>
+                            <li><a href="">Kem Trị Mụn Klenzit Ms Điều Trị Bệnh Trứng Cá (Tuýp 15G)</a></li>
+                            <li><a href="">Klenzit C Tuýp 15G Gel Trị Mụn Trứng Cá</a></li>
+                            <li><a href="">Thuốc Eugica Xanh Trị Ho Đờm, Cảm Cúm, Sổ Mũi (Hộp 10 Vỉ X 10 Viên)</a></li>
+                            <li><a href="">Thuốc Xarelto 10Mg Phòng Ngừa Đột Quỵ, Tắc Mạch (Hộp 10 Viên)</a></li>
+                        </ul>
+                        <div class="text-center">
+                            <a class="link-all" href="">Xem tất cả</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <div class="sc">
+        <div class="container">
+            <div class="pharmacy__bestsale pharmacy__bestsale__normal">
+          
+              <h2 class="pharmacy__title">Bản tin sức khoẻ</h2>
+              
+              <div class="swiper arewiper">
+                <div class="swiper-wrapper">
+                  <!-- swiper-wrapper -->
+                  <div class="swiper-slide">
+                    <div class="d-flex flex-column flex-md-row justify-content-between">
+                      <div class="pharmacy__bestsale--tagv2">
+                        <img class="pharmacy__bestsale--imgver2" src="./img/Krebs.png" alt="cancel" />
+                        <div class="filter">
+                          <div class="pharmacy__bestsale--opacity">
+                            <div class="after-opacity">
+                              <span>Tháng 4, 2022</span>
+                              <div class="doc"></div>
+                              <p>Đăng bởi: admin</p>
+                              <div class="line"></div>
+                              <img src="./img/svg/thought.svg" alt="thinking" />
+                              <p>56 lượt xem</p>
+                            </div>
+                            <h2>Có nên mang thai sau khi điều trị ung thư</h2>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="pharmacy__bestsale--productv2">
+                        <div class="pharmacy__bestsale--firstproductv2">
+                          <div class="half-tag">
+                            <span>Tháng 4, 2022</span>
+                            <h2>Ù Tai Khi Yên Tĩnh Có Nguy Hiểm Không?</h2>
+                            <div class="half-tag__inside">
+                              <p>Đăng bởi admin</p>
+                              <div class="line"></div>
+                              <img src="./img/svg/thought.svg" alt="thought" />
+                              <p>56 Lượt xem</p>
+                            </div>
+                          </div>
+                          <img class="pharmacy__bestsale--only1" src="./img/sleep.png" alt="sleep for air" />
+                        </div>
+                        <div class="pharmacy__bestsale--firstproductv2">
+                          <div class="half-tag">
+                            <span>Tháng 4, 2022</span>
+                            <h2>Máy Tăm Nước Cầm Tay Halio Professional Cordless Oral ...</h2>
+                            <div class="half-tag__inside">
+                              <p>Đăng bởi admin</p>
+                              <div class="line"></div>
+                              <img src="./img/svg/thought.svg" alt="thought" />
+                              <p>56 Lượt xem</p>
+                            </div>
+                          </div>
+                          <img class="pharmacy__bestsale--only1" src="./img/handmachine.png" alt="machine" />
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="swiper-slide">
+                    <div class="d-flex flex-column flex-md-row justify-content-between">
+                      <div class="pharmacy__bestsale--tagv2">
+                        <img class="pharmacy__bestsale--imgver2" src="./img/Krebs.png" alt="cancel" />
+                        <div class="filter">
+                          <div class="pharmacy__bestsale--opacity">
+                            <div class="after-opacity">
+                              <span>Tháng 4, 2022</span>
+                              <div class="doc"></div>
+                              <p>Đăng bởi: admin</p>
+                              <div class="line"></div>
+                              <img src="./img/svg/thought.svg" alt="thinking" />
+                              <p>56 lượt xem</p>
+                            </div>
+                            <h2>Có nên mang thai sau khi điều trị ung thư</h2>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="pharmacy__bestsale--productv2">
+                        <div class="pharmacy__bestsale--firstproductv2">
+                          <div class="half-tag">
+                            <span>Tháng 4, 2022</span>
+                            <h2>Ù Tai Khi Yên Tĩnh Có Nguy Hiểm Không?</h2>
+                            <div class="half-tag__inside">
+                              <p>Đăng bởi admin</p>
+                              <div class="line"></div>
+                              <img src="./img/svg/thought.svg" alt="thought" />
+                              <p>56 Lượt xem</p>
+                            </div>
+                          </div>
+                          <img class="pharmacy__bestsale--only1" src="./img/sleep.png" alt="sleep for air" />
+                        </div>
+                        <div class="pharmacy__bestsale--firstproductv2">
+                          <div class="half-tag">
+                            <span>Tháng 4, 2022</span>
+                            <h2>Máy Tăm Nước Cầm Tay Halio Professional Cordless Oral ...</h2>
+                            <div class="half-tag__inside">
+                              <p>Đăng bởi admin</p>
+                              <div class="line"></div>
+                              <img src="./img/svg/thought.svg" alt="thought" />
+                              <p>56 Lượt xem</p>
+                            </div>
+                          </div>
+                          <img class="pharmacy__bestsale--only1" src="./img/handmachine.png" alt="machine" />
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="swiper-button-leftmain">
+                  <svg width="14" height="12" viewBox="0 0 14 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M13 6.75012C13.4142 6.75012 13.75 6.41434 13.75 6.00012C13.75 5.58591 13.4142 5.25012 13 5.25012L13 6.75012ZM0.46967 5.46979C0.176777 5.76268 0.176777 6.23756 0.46967 6.53045L5.24264 11.3034C5.53553 11.5963 6.01041 11.5963 6.3033 11.3034C6.59619 11.0105 6.59619 10.5357 6.3033 10.2428L2.06066 6.00012L6.3033 1.75748C6.59619 1.46459 6.59619 0.989714 6.3033 0.696821C6.01041 0.403927 5.53553 0.403927 5.24264 0.696821L0.46967 5.46979ZM13 5.25012L6.36842 5.25012L6.36842 6.75012L13 6.75012L13 5.25012ZM6.36842 5.25012L1 5.25012L1 6.75012L6.36842 6.75012L6.36842 5.25012Z" fill="#2C2727"/>
+                  </svg>
+                </div>
+                <div class="swiper-button-rightmain">
+                  <svg width="14" height="13" viewBox="0 0 14 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M1 7.25012C0.585786 7.25012 0.25 6.91434 0.25 6.50012C0.25 6.08591 0.585786 5.75012 1 5.75012L1 7.25012ZM13.5303 5.96979C13.8232 6.26268 13.8232 6.73756 13.5303 7.03045L8.75736 11.8034C8.46447 12.0963 7.98959 12.0963 7.6967 11.8034C7.40381 11.5105 7.40381 11.0357 7.6967 10.7428L11.9393 6.50012L7.6967 2.25748C7.40381 1.96459 7.40381 1.48971 7.6967 1.19682C7.98959 0.903927 8.46447 0.903927 8.75736 1.19682L13.5303 5.96979ZM1 5.75012L7.63158 5.75012L7.63158 7.25012L1 7.25012L1 5.75012ZM7.63158 5.75012L13 5.75012L13 7.25012L7.63158 7.25012L7.63158 5.75012Z" fill="#2C2727"/>
+                    </svg>
+                </div>
+                <div class="swiper-pagination-custom"></div>
+              </div>
+            </div>
+        </div>
+    </div>
+    
+    <div class="sc sc-product-bar bg-grey">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-3 col-sm-6">
+                    <div class="product-bar">
+                        <div class="bar-icon"><img alt="" src="img/svg/thuoc-gia-tot.svg" /></div>
+                        <div class="bar-content">
+                            <h6>Thuốc chính hãng</h6>
+                            <p>Đa dạng và chuyên sâu</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-sm-6">
+                    <div class="product-bar">
+                        <div class="bar-icon"><img alt="" src="img/svg/doi-tra.svg" /></div>
+                        <div class="bar-content">
+                            <h6>Đổi trả trong 30 ngày</h6>
+                            <p>Kể từ ngày mua hàng</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-sm-6">
+                    <div class="product-bar">
+                        <div class="bar-icon"><img alt="" src="img/svg/cam-ket.svg" /></div>
+                        <div class="bar-content">
+                            <h6>Cam kết 100%</h6>
+                            <p>Chất lượng sản phẩm</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-sm-6">
+                    <div class="product-bar">
+                        <div class="bar-icon"><img alt="" src="img/svg/van-chuyen.svg" /></div>
+                        <div class="bar-content">
+                            <h6>Miễn phí vận chuyển</h6>
+                            <p>Theo chính sách giao hàng</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+</main>
+  
+<footer>
+    <div class="footer-main">
+      <div class="container">
+        <h1>Nhà thuốc 3T</h1>
+        <div class="footer-main__wrap">
+          <div class="footer-main__information">
+            <div class="footer-main__location">
+              <a href="https://goo.gl/maps/BTJQz58yFjP97zkK7"><img src="./img/svg/location.svg" target="_blank"
+                  alt="location of building" />
+                <p>
+                  Trụ sở: Tầng 11, toà Zen Tower, Số 12, Khuất Duy Tiến,
+                  P.Thanh Xuân Trung, Thanh Xuân, Hà Nội
+                </p>
+              </a>
+              <a href="mailto:nhathuoc3T@gmail.com"><img src="./img/svg/gmailloca.svg" alt="gmail send" />
+                <p>nhathuoc3T@gmail.com</p>
+              </a>
+            </div>
+            <div class="line-inside"></div>
+            <div class="footer-main__check">
+              <h3>Chứng nhận</h3>
+              <div class="footer-main__authetic">
+                <img src="./img/bocongthuongcheck.png" alt="Bo cong thuong check" />
+                <img src="./img/dmcacheck.png" alt="dcma check" />
+              </div>
+            </div>
+          </div>
+          <div class="footer-main__menunav">
+            <h3>Tìm hiểu thêm</h3>
+            <p>Giới thiệu</p>
+            <p>Chính sách đổi trả và giao hàng</p>
+          </div>
+          <div class="footer-main__menunav">
+            <h3>Danh mục</h3>
+            <p>Thực phẩm chức năng</p>
+            <p>Dược mỹ phẩm</p>
+            <p>Chăm sóc cá nhân</p>
+            <p>Thuốc</p>
+            <p>Thiết bị y tế</p>
+            <p>Bản tin sức khoẻ</p>
+          </div>
+          <div class="footer-main__social">
+            <div class="calltome">
+              <img src="./img/social-media/telefon.png" alt="telephone" />
+              <div class="footer-main__social--title">
+                <p>Tư vấn mua hàng(miễn phí)</p>
+                <h2>0939 129 889</h2>
+              </div>
+            </div>
+            <div class="social-internet">
+              <img src="./img/social-media/facebook.png" alt="facebook" />
+              <img src="./img/social-media/utube.png" alt="youtube" />
+              <img src="./img/social-media/Group 1609.png" alt="zalo" />
+              <img src="./img/social-media/gmail-footer.png" alt="gmail footer" />
+            </div>
+          </div>
+        </div>
+        <p class="circlefooterleft">
+          <img src="./img/circlefooter.png" alt="circlefooter">
+        </p>
+        <p class="circlefooterright">
+          <img src="./img/circlefooter2.png" alt="circlefooter2">
+        </p>
+      </div>
+    
+    </div>
+
+    <div class="footer-after">
+      <div class="container">
+        <p>Design by GCO Software <span id="date">2022</span></p>
+      </div>
+    </div>
+    
+</footer>
+
+<div class="btns-contact">
+    <div class="social-btns">
+      <div class="social-btns__calltome">
+        <p class="social-btns__calltome--img3" >
+          <img src="./img/svg/Call.svg" alt="call ring" />
+          <div class="zoom-in-out-box"></div>
+          <div class="cover"><a class="numberphone" href="tel:0939129889">0939 129 889</a></div>
+        </p>
+      </div>
+      <div class="social-btns__social">
+        <img src="./img/svg/messengerpopup.svg" alt="messengerpopup" />
+        <img src="./img/svg/zalopopup.svg" alt="zalopopup" />
+        <button class="scroll-top" href="#home" id="scroll-top">
+          <img src="./img/svg/button-top.svg" alt="popuparrowtop" />
+        </button> 
+      </div>
+    </div>
+</div>
+
+<!-- MOdal Login-->  
+<div class="modal fade" id="login_form" tabindex="-1" role="dialog" aria-labelledby="login_form" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <div class="modal-title">Đăng nhập</div>
+                <button type="button" class="btn-close modal-close" data-bs-dismiss="modal" aria-label="Close">
+                    <img alt="" src="img/svg/close.svg" />
+                </button>
+            </div>
+            <div class="modal-body">
+                <div class="lg-wrap text-center">
+                    <div class="lg-logo"><img alt="" src="img/svg/lg-logo.svg" width="109px" height="109px" /></div>
+                    <div class="lg-desc">
+                        <p>Nhập số điện thoại bạn dùng để mua hàng tại nhà thuốc 3T</p>
+                    </div>
+                    <div class="lg-content">
+                        <form class="lg-form" method="GET" action="">
+                            <input type="text" placeholder="Nhập số điện thoại" />
+                            <input type="submit" value="Tiếp tục" />
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!--Modal Nhập theo tên Thuốc-->
+<div class="modal fade" id="nhap_thuoc" tabindex="-1" role="dialog" aria-labelledby="nhap_thuoc" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <div class="modal-title">Nhập theo tên thuốc</div>
+                <button type="button" class="btn-close modal-close" data-bs-dismiss="modal" aria-label="Close">
+                    <img alt="" src="img/svg/close.svg" />
+                </button>
+            </div>
+            <div class="modal-body">
+                <div class="search search-v2 margin-50">
+                  <form id="search-form" action="#" class="search-form">
+                    <div class="search-form-wrap">
+                        <input type="text" class="search__input search__input-second" placeholder="Tìm sản phẩm">
+                        <button class="search__button">
+                          <i class="search__icon fa-solid fa-magnifying-glass"></i>
+                        </button>
+                    </div>
+                    <div class="search-suggest search-suggest-v2">
+                        <div class="search-box search-1">
+                            <ul class="search-result-links">
+                                <li><span>F</span></li>
+                                <li><span>Fefasdin 60 Khapharco 10x10</span><a href="#">Thêm</a></li>
+                                <li><span>Katrydsin Fort 8400iu kh 10x10</span><a href="#">Thêm</a></li>
+                            </ul>    
+                        </div>
+                    </div>
+                  </form>
+                </div>
+                
+                <p class="margin-50 text-center"><img alt="" src="img/nhap-thuoc.png" width="432px" height="244px" /></p>
+                
+                <h6 class="margin-24">Tên thuốc đã nhập</h6>
+                
+                <div class="list-thuoc-nhap margin-32">
+                    <ol class="search-result-links">
+                        <li><span>Fefasdin 60 Khapharco 10x10</span><a href="#">Xoá</a></li>
+                        <li><span>Katrydsin Fort 8400iu kh 10x10</span><a href="#">Xoá</a></li>
+                    </ol> 
+                </div>
+                
+                <p class="text-center"><a class="btn-2" href="#">Hoàn thành</a></p>
+               
+            </div>
+        </div>
+    </div>
+</div>
+    
+<script src="./js/bootstrap.min.js"></script>
+<script src="./js/swiper-bundle.min.js"></script>
+<script src="./js/jquery.fancybox.min.js"></script>
+<script src="./js/main.js"></script>
+<script src="./js/functions.js"></script>
+
+</body>
+
+</html>
