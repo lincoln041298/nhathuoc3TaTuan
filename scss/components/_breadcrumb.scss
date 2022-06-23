@@ -1,0 +1,27 @@
+.breadcrumb {
+    margin-top: 24px;
+    margin-bottom: 32px;
+    padding-left: 15px;
+  &__information {
+    display: flex;
+    align-items: center;
+  }
+
+  &__text {
+    font-weight: 400;
+    font-size: 13px;
+    line-height: 20px;
+
+    a {
+        text-decoration: none;
+        color: var(--color-grey-dark-0);
+        &:hover {
+            color: var(--color-primary);
+        }
+    }
+  }
+
+  &__img {
+    padding: 0 10px;
+  }
+}

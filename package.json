@@ -4,12 +4,13 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "compile:sass": "node-sass scss/main.scss css/newslincoln.css -w"
   },
   "author": "",
   "license": "ISC",
   "dependencies": {
     "bootstrap": "^5.1.3",
+    "node-sass": "^7.0.1",
     "sass": "^1.52.3",
     "save": "^2.5.0"
   }
