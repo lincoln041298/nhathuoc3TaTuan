@@ -1,0 +1,863 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Chính sách đổi trả</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/swiper@8/swiper-bundle.min.css"
+    />
+
+    <link rel="stylesheet" href="./css/bootstrap.min.css" />
+    <link rel="stylesheet" href="./css/jquery.fancybox.min.css" />
+    <link rel="stylesheet" href="./css/newslincoln.css" />
+  </head>
+  <body>
+    <header class="header" id="home">
+      <div class="container">
+        <div class="header__logo">
+          <img src="./img/logo/logo.png" alt="logo 3t" />
+        </div>
+
+        <div class="search for-desktop">
+          <form id="search-form" action="#" class="search-form">
+            <div class="search-form-wrap">
+              <input
+                type="text"
+                class="search__input search__input-thuoc"
+                placeholder="Tìm sản phẩm"
+              />
+              <button class="search__button">
+                <i class="search__icon fa-solid fa-magnifying-glass"></i>
+              </button>
+            </div>
+            <div class="search-suggest">
+              <div class="search-box search-3">
+                <div class="thuoc-button-group">
+                  <div class="radio-wrap radio-inline-wrap">
+                    <span class="radio-style checked first">
+                      <input
+                        type="radio"
+                        name="is_don"
+                        value="1"
+                        id="all"
+                        class="radio-inp"
+                      />
+                      <label for="all">Tất cả</label>
+                    </span>
+                    <span class="radio-style">
+                      <input
+                        type="radio"
+                        name="is_don"
+                        value="1"
+                        id="thuoc"
+                        class="radio-inp"
+                      />
+                      <label for="thuoc">Thuốc</label>
+                    </span>
+                    <span class="radio-style">
+                      <input
+                        type="radio"
+                        name="is_don"
+                        value="1"
+                        id="duoc_chat"
+                        class="radio-inp"
+                      />
+                      <label for="duoc_chat">Dược chất</label>
+                    </span>
+                    <span class="radio-style">
+                      <input
+                        type="radio"
+                        name="is_don"
+                        value="1"
+                        id="duoc_lieu"
+                        class="radio-inp"
+                      />
+                      <label for="duoc_lieu">Dược liệu</label>
+                    </span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </form>
+        </div>
+
+        <button
+          class="button-accept btn-modal"
+          data-bs-toggle="modal"
+          data-bs-target="#login_form"
+        >
+          Đăng nhập
+        </button>
+
+        <div class="header__otherbutton">
+          <p class="header__otherbutton--img">
+            <img src="./img/hambergar.png" alt="9 dots" />
+          </p>
+          <div class="header__otherbutton--text">
+            <p>Tra cứu</p>
+            <p>Lịch sử đơn hàng</p>
+
+            <div class="menu-order">
+              <ul>
+                <li><a href="#">Đơn hàng của tôi</a></li>
+                <li><a href="#">Thoát tài khoản</a></li>
+              </ul>
+            </div>
+          </div>
+          <div class="mini-line"></div>
+          <div class="header__cart">
+            <div class="header__cart--img">
+              <p class="header__cart--icon">
+                <img src="./img/svg/cartheader.svg" alt="cart to add" />
+              </p>
+              <span class="circle-tick">3</span>
+            </div>
+
+            <p class="cart-alone">Giỏ hàng</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="container">
+        <div class="search for-mobile">
+          <form action="#" class="search-form search-form-main">
+            <div class="search-form-wrap search-form-wrap-main">
+              <input
+                type="text"
+                class="search__input"
+                placeholder="Tìm sản phẩm"
+              />
+              <button class="search__button">
+                <i class="search__icon fa-solid fa-magnifying-glass"></i>
+              </button>
+            </div>
+            <div class="search-suggest">
+              <div class="search-box search-1">
+                <div class="search-title">Tìm kiếm nhiều nhất</div>
+                <ul class="search-links">
+                  <li><a href="#">Panadol</a></li>
+                  <li><a href="#">Vitamin</a></li>
+                  <li><a href="#">Khẩu trang</a></li>
+                  <li><a href="#">Panadol</a></li>
+                  <li><a href="#">SpO2</a></li>
+                  <li><a href="#">Panadol</a></li>
+                  <li><a href="#">Vitamin</a></li>
+                  <li><a href="#">Panadol</a></li>
+                </ul>
+              </div>
+              <div class="search-box search-2">
+                <ul class="search-top">
+                  <li>Thuốc ho</li>
+                  <li>Thuốc cảm cúm</li>
+                  <li>Thuốc bổ</li>
+                  <li>Thuốc đau đầu</li>
+                </ul>
+                <div class="search-line">
+                  <span>Sản phẩm được tìm nhiều</span>
+                </div>
+                <ul class="search-bottom">
+                  <li>
+                    <div class="search-thumb">
+                      <img alt="" src="img/s1.png" />
+                    </div>
+                    <div class="search-right">
+                      <span class="search-product-subtitle">Thuốc</span>
+                      <span class="search-product-title"
+                        >Thuốc ho bổ phế Trường Bách Diệp 125 Ml</span
+                      >
+                    </div>
+                  </li>
+                  <li>
+                    <div class="search-thumb">
+                      <img alt="" src="img/s2.png" />
+                    </div>
+                    <div class="search-right">
+                      <span class="search-product-subtitle">Thuốc</span>
+                      <span class="search-product-title"
+                        >Thuốc ho bổ phế Trường Bách Diệp 125 Ml</span
+                      >
+                    </div>
+                  </li>
+                  <li>
+                    <div class="search-thumb">
+                      <img alt="" src="img/s3.png" />
+                    </div>
+                    <div class="search-right">
+                      <span class="search-product-subtitle">Thuốc</span>
+                      <span class="search-product-title"
+                        >Thuốc ho bổ phế Trường Bách Diệp 125 Ml</span
+                      >
+                    </div>
+                  </li>
+                </ul>
+                <div class="search-all"><a href="#">Xem tất cả</a></div>
+              </div>
+            </div>
+          </form>
+          <button class="button-open"><i class="fa-solid fa-bars"></i></button>
+        </div>
+      </div>
+    </header>
+    <div class="menu-wrap">
+      <div class="container">
+        <div class="main-nav">
+          <ul class="choosen-health">
+            <li>
+              <a href="#">
+                <span>Thực phẩm Chức Năng</span>
+                <img
+                  class="dropdown-icon"
+                  src="./img/svg/dropdown.svg"
+                  alt="dropdown"
+                />
+              </a>
+              <div class="sub-menu">
+                <div class="sub-menu-grid">
+                  <div class="sub-menu-left">
+                    <ul class="menu-title">
+                      <li class="active">
+                        <a href="#">
+                          <img
+                            alt=""
+                            src="img/svg/sinh-ly.svg"
+                            width="40px"
+                            height="40px"
+                          />
+                          <span>Sinh lý - Nội tiết tố</span>
+                        </a>
+                      </li>
+                      <li>
+                        <a href="#">
+                          <img
+                            alt=""
+                            src="img/svg/tim-mach.svg"
+                            width="40px"
+                            height="40px"
+                          />
+                          <span>Sức khoẻ tim mạch</span>
+                        </a>
+                      </li>
+                      <li>
+                        <a href="#">
+                          <img
+                            alt=""
+                            src="img/svg/tieu-hoa.svg"
+                            width="40px"
+                            height="40px"
+                          />
+                          <span>Hỗ trợ tiêu hoá</span>
+                        </a>
+                      </li>
+                      <li>
+                        <a href="#">
+                          <img
+                            alt=""
+                            src="img/svg/than-kinh.svg"
+                            width="40px"
+                            height="40px"
+                          />
+                          <span>Thần kinh não</span>
+                        </a>
+                      </li>
+                      <li>
+                        <a href="#">
+                          <img
+                            alt=""
+                            src="img/svg/hotro-dieu-tri.svg"
+                            width="40px"
+                            height="40px"
+                          />
+                          <span>Hỗ trợ điều trị</span>
+                        </a>
+                      </li>
+                      <li>
+                        <a href="#">
+                          <img
+                            alt=""
+                            src="img/svg/tang-cuong-chuc-nang.svg"
+                            width="40px"
+                            height="40px"
+                          />
+                          <span>Cải thiện tăng cường chức năng</span>
+                        </a>
+                      </li>
+                      <li>
+                        <a href="#">
+                          <img
+                            alt=""
+                            src="img/svg/thao-duoc.svg"
+                            width="40px"
+                            height="40px"
+                          />
+                          <span>Thảo dược và thực phẩm tự nhiên</span>
+                        </a>
+                      </li>
+                      <li>
+                        <a href="#">
+                          <img
+                            alt=""
+                            src="img/svg/lam-dep.svg"
+                            width="40px"
+                            height="40px"
+                          />
+                          <span>Hỗ trợ làm đẹp</span>
+                        </a>
+                      </li>
+                      <li>
+                        <a href="#">
+                          <img
+                            alt=""
+                            src="img/svg/vitamin.svg"
+                            width="40px"
+                            height="40px"
+                          />
+                          <span>Vitamin và khoáng chất</span>
+                        </a>
+                      </li>
+                      <li>
+                        <a href="#">
+                          <img
+                            alt=""
+                            src="img/svg/dinh-duong.svg"
+                            width="40px"
+                            height="40px"
+                          />
+                          <span>Dinh dưỡng</span>
+                        </a>
+                      </li>
+                    </ul>
+                  </div>
+                  <div class="sub-menu-right">
+                    <div class="menu-buttons">
+                      <div class="nav-btn">
+                        <div class="btn-item active">
+                          <a href="#">Sinh lý nam</a>
+                        </div>
+                        <div class="btn-item"><a href="#">Sinh lý nữ</a></div>
+                        <div class="btn-item">
+                          <a href="#">Hỗ trợ mãn kinh</a>
+                        </div>
+                        <div class="btn-item">
+                          <a href="#">Cân bằng nội tiết tố</a>
+                        </div>
+                        <div class="btn-item">
+                          <a href="#">Sức khoẻ tình dục</a>
+                        </div>
+                        <div class="btn-item"><a href="#">Sức khoẻ</a></div>
+                      </div>
+                    </div>
+                    <div class="menu-product">
+                      <div class="nav-product-title">
+                        <div class="nav-title-left">
+                          <img
+                            alt=""
+                            src="img/svg/4dot-icon.svg"
+                            width="27px"
+                            height="27px"
+                          />Sản Phẩm bán chạy
+                        </div>
+                        <div class="nav-title-right">
+                          <a href="#">Xem tất cả</a>
+                        </div>
+                      </div>
+                      <div class="menu-product-grid">
+                        <div class="menu-product-item">
+                          <div
+                            class="pharmacy__bestsale--cover pharmacy__bestsale--style-1"
+                          >
+                            <div class="pharmacy-thumb">
+                              <a href=""
+                                ><img
+                                  src="./img/einsprodukt.png"
+                                  alt="first product"
+                              /></a>
+                            </div>
+                            <div class="pharmacy__bestsale--include fix-size">
+                              <a
+                                class="pharmacy__bestsale--functionalfood"
+                                href="#"
+                                >Thực phẩm chức năng</a
+                              >
+                              <a class="pharmacy__bestsale--title" href="#"
+                                >Viên Uống Sâm Nhung Bổ Thận Nv Dolexpharm Giúp
+                                Tráng...</a
+                              >
+                              <div class="pharmacy__bestsale--price">
+                                110.00
+                                <p>/hộp</p>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="menu-product-item">
+                          <div
+                            class="pharmacy__bestsale--cover pharmacy__bestsale--style-1"
+                          >
+                            <div class="pharmacy-thumb">
+                              <a href=""
+                                ><img
+                                  src="./img/zweiprodukt.png"
+                                  alt="second product"
+                              /></a>
+                            </div>
+                            <div class="pharmacy__bestsale--include fix-size">
+                              <a
+                                class="pharmacy__bestsale--functionalfood"
+                                href="#"
+                                >Thực phẩm chức năng</a
+                              >
+                              <a class="pharmacy__bestsale--title" href="#"
+                                >Viên Uống Sâm Nhung Bổ Thận Nv Dolexpharm Giúp
+                                Tráng ...</a
+                              >
+                              <div class="pharmacy__bestsale--price">
+                                110.00
+                                <p>/hộp</p>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="menu-product-item">
+                          <div
+                            class="pharmacy__bestsale--cover pharmacy__bestsale--style-1"
+                          >
+                            <div class="pharmacy-thumb">
+                              <a href=""
+                                ><img
+                                  src="./img/dreiprodukt.png"
+                                  alt="first product"
+                              /></a>
+                            </div>
+                            <div class="pharmacy__bestsale--include fix-size">
+                              <a
+                                class="pharmacy__bestsale--functionalfood"
+                                href="#"
+                                >Thực phẩm chức năng</a
+                              >
+                              <a class="pharmacy__bestsale--title" href="#"
+                                >Viên Uống Sâm Nhung Bổ Thận Nv Dolexpharm Giúp
+                                Tráng ...</a
+                              >
+                              <div class="pharmacy__bestsale--price">
+                                110.00
+                                <p>/hộp</p>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="menu-product-item">
+                          <div
+                            class="pharmacy__bestsale--cover pharmacy__bestsale--style-1"
+                          >
+                            <div class="pharmacy-thumb">
+                              <a href=""
+                                ><img
+                                  src="./img/einsprodukt.png"
+                                  alt="first product"
+                              /></a>
+                            </div>
+                            <div class="pharmacy__bestsale--include">
+                              <a
+                                class="pharmacy__bestsale--functionalfood"
+                                href="#"
+                                >Thực phẩm chức năng</a
+                              >
+                              <a class="pharmacy__bestsale--title" href="#"
+                                >Viên Uống Sâm Nhung Bổ Thận Nv Dolexpharm Giúp
+                                Tráng ...</a
+                              >
+                              <div class="pharmacy__bestsale--price">
+                                110.00
+                                <p>/hộp</p>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="menu-product-item">
+                          <div
+                            class="pharmacy__bestsale--cover pharmacy__bestsale--style-1"
+                          >
+                            <div class="pharmacy-thumb">
+                              <a href=""
+                                ><img
+                                  src="./img/einsprodukt.png"
+                                  alt="first product"
+                              /></a>
+                            </div>
+                            <div class="pharmacy__bestsale--include fix-size">
+                              <a
+                                class="pharmacy__bestsale--functionalfood"
+                                href="#"
+                                >Thực phẩm chức năng</a
+                              >
+                              <a class="pharmacy__bestsale--title" href="#"
+                                >Viên Uống Sâm Nhung Bổ Thận Nv Dolexpharm Giúp
+                                Tráng ...</a
+                              >
+                              <div class="pharmacy__bestsale--price">
+                                110.00
+                                <p>/hộp</p>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </li>
+            <li>
+              <a href="#">
+                <span>Dược Mỹ Phẩm</span>
+                <img
+                  class="dropdown-icon"
+                  src="./img/svg/dropdown.svg"
+                  alt="dropdown"
+                />
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <span>Thiết bị y tế</span>
+                <img
+                  class="dropdown-icon"
+                  src="./img/svg/dropdown.svg"
+                  alt="dropdown"
+                />
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <span>Chăm sóc cá nhân</span>
+                <img
+                  class="dropdown-icon"
+                  src="./img/svg/dropdown.svg"
+                  alt="dropdown"
+                />
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <span>Thuốc</span>
+                <img
+                  class="dropdown-icon"
+                  src="./img/svg/dropdown.svg"
+                  alt="dropdown"
+                />
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <span>Bản tin sức khoẻ</span>
+                <img
+                  class="dropdown-icon"
+                  src="./img/svg/dropdown.svg"
+                  alt="dropdown"
+                />
+              </a>
+            </li>
+          </ul>
+        </div>
+
+        <div class="choosen-health__tablet-mobile">
+          <div class="nav-button-close">
+            <button class="button-close">
+              <i class="fa-solid fa-xmark"></i>
+            </button>
+          </div>
+
+          <div class="nav-mobile-wrap">
+            <ul class="nav-mobile">
+              <li class="has-dropdown">
+                <a href="">Thuốc</a>
+                <ul class="dropdown">
+                  <li><a href="#">Sinh lý nam</a></li>
+                  <li><a href="#">Sinh lý nữ</a></li>
+                  <li><a href="#">Hỗ trợ mãn kinh</a></li>
+                  <li><a href="#">Cân bằng nội tiết tố</a></li>
+                  <li><a href="#">Sức khoẻ tình dục</a></li>
+                  <li><a href="#">Sức khoẻ</a></li>
+                </ul>
+              </li>
+              <li class="has-dropdown">
+                <a href="">Thực phẩm Chức Năng</a>
+                <ul class="dropdown">
+                  <li><a href="#">Sinh lý nam</a></li>
+                  <li><a href="#">Sinh lý nữ</a></li>
+                  <li><a href="#">Hỗ trợ mãn kinh</a></li>
+                  <li><a href="#">Cân bằng nội tiết tố</a></li>
+                  <li><a href="#">Sức khoẻ tình dục</a></li>
+                  <li><a href="#">Sức khoẻ</a></li>
+                </ul>
+              </li>
+              <li class="has-dropdown">
+                <a href="">Dược Mỹ Phẩm</a>
+                <ul class="dropdown">
+                  <li><a href="#">Sinh lý nam</a></li>
+                  <li><a href="#">Sinh lý nữ</a></li>
+                  <li><a href="#">Hỗ trợ mãn kinh</a></li>
+                  <li><a href="#">Cân bằng nội tiết tố</a></li>
+                  <li><a href="#">Sức khoẻ tình dục</a></li>
+                  <li><a href="#">Sức khoẻ</a></li>
+                </ul>
+              </li>
+              <li class="has-dropdown">
+                <a href="">Thiết bị y tế</a>
+                <ul class="dropdown">
+                  <li><a href="#">Sinh lý nam</a></li>
+                  <li><a href="#">Sinh lý nữ</a></li>
+                  <li><a href="#">Hỗ trợ mãn kinh</a></li>
+                  <li><a href="#">Cân bằng nội tiết tố</a></li>
+                  <li><a href="#">Sức khoẻ tình dục</a></li>
+                  <li><a href="#">Sức khoẻ</a></li>
+                </ul>
+              </li>
+              <li class="has-dropdown">
+                <a href="">Chăm sóc cá nhân</a>
+                <ul class="dropdown">
+                  <li><a href="#">Sinh lý nam</a></li>
+                  <li><a href="#">Sinh lý nữ</a></li>
+                  <li><a href="#">Hỗ trợ mãn kinh</a></li>
+                  <li><a href="#">Cân bằng nội tiết tố</a></li>
+                  <li><a href="#">Sức khoẻ tình dục</a></li>
+                  <li><a href="#">Sức khoẻ</a></li>
+                </ul>
+              </li>
+              <li class="has-dropdown">
+                <a href="">Bản tin sức khoẻ</a>
+                <ul class="dropdown">
+                  <li><a href="#">Sinh lý nam</a></li>
+                  <li><a href="#">Sinh lý nữ</a></li>
+                  <li><a href="#">Hỗ trợ mãn kinh</a></li>
+                  <li><a href="#">Cân bằng nội tiết tố</a></li>
+                  <li><a href="#">Sức khoẻ tình dục</a></li>
+                  <li><a href="#">Sức khoẻ</a></li>
+                </ul>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="breadcrumb container">
+      <div class="breadcrumb__information">
+        <p class="breadcrumb__text"><a href="#">Trang chủ</a></p>
+        <p class="breadcrumb__img">
+          <img
+            src="./img/imgLinh/icon/arowbreadcrumb.svg"
+            alt="arowbreadcrumb"
+          />
+        </p>
+        <p class="breadcrumb__text"><a href="#">Chính sách đổi trả</a></p>
+      </div>
+    </div>
+
+    <main>
+      <div class="container">
+        <div class="polixy">
+          <h1>Chính sách đổi trả và giao hàng</h1>
+          <h2>I. Chính sách giao hàng</h2>
+          <h3>1. Nhà thuốc 3T có giao hàng thuốc không?</h3>
+          <p>
+            Dolor sit amet, consectetur adipiscing elit. Commodo ullamcorper
+            blandit suspendisse ipsum tellus maecenas morbi elit. In nunc diam
+            tellus fames libero cras sapien. Sit risus egestas et, ultrices
+            bibendum ac scelerisque. Risus porta volutpat congue imperdiet nulla
+            commodo lectus cum. Eu odio rhoncus nullam quam viverra quis a
+            ultrices vitae. Mauris dignissim commodo tincidunt sit purus magna
+            lacus. Sagittis, sit justo, quisque varius nam. Iaculis dui aliquet
+            elit nisl justo, sem. Scelerisque vulputate diam sed sit eget fusce
+            leo facilisi lectus. In platea mattis auctor nunc nisl velit est.
+            Platea nulla sem ornare cursus quisque augue scelerisque magna.
+            Nunc, etiam augue nisi duis purus quam id diam facilisis.
+          </p>
+          <p>
+            Tincidunt consequat, dictum tempor, bibendum gravida gravida.
+            Ultricies tortor pulvinar dignissim semper senectus. Tortor sed
+            neque faucibus ipsum erat. Quis tristique cursus egestas senectus
+            penatibus nunc, semper. Amet massa eleifend donec ac duis. Velit
+            enim rhoncus pulvinar non. Tincidunt ultricies tempor imperdiet
+            odio.
+          </p>
+
+          <p>
+            Bibendum gravida gravida. Ultricies tortor pulvinar dignissim semper
+            senectus. Tortor sed neque faucibus ipsum erat. Quis tristique
+            cursus egestas senectus penatibus nunc, semper. Amet massa eleifend
+            donec ac duis. Velit enim rhoncus pulvinar non. Tincidunt ultricies
+            tempor imperdiet odio.
+          </p>
+          <h3>2. Khi nào tôi có thể nhận được đơn hàng?</h3>
+          <p>
+            Dolor sit amet, consectetur adipiscing elit. Commodo ullamcorper
+            blandit suspendisse ipsum tellus maecenas morbi elit. In nunc diam
+            tellus fames libero cras sapien. Sit risus egestas et, ultrices
+            bibendum ac scelerisque. Risus porta volutpat congue imperdiet nulla
+            commodo lectus cum. Eu odio rhoncus nullam quam viverra quis a
+            ultrices vitae. Mauris dignissim commodo tincidunt sit purus magna
+            lacus. Sagittis, sit justo, quisque varius nam. Iaculis dui aliquet
+            elit nisl justo, sem. Scelerisque vulputate diam sed sit eget fusce
+            leo facilisi lectus. In platea mattis auctor nunc nisl velit est.
+            Platea nulla sem ornare cursus quisque augue scelerisque magna.
+            Nunc, etiam augue nisi duis purus quam id diam facilisis.
+          </p>
+          <p>
+            Tincidunt consequat, dictum tempor, bibendum gravida gravida.
+            Ultricies tortor pulvinar dignissim semper senectus. Tortor sed
+            neque faucibus ipsum erat. Quis tristique cursus egestas senectus
+            penatibus nunc, semper. Amet massa eleifend donec ac duis. Velit
+            enim rhoncus pulvinar non. Tincidunt ultricies tempor imperdiet
+            odio.
+          </p>
+
+          <h2>II. Chính sách đổi trả</h2>
+          <h3>1. Quy định đổi trả hàng 3T</h3>
+          <p>
+            Amet, consectetur adipiscing elit. Commodo ullamcorper blandit
+            suspendisse ipsum tellus maecenas morbi elit. In nunc diam tellus
+            fames libero cras sapien. Sit risus egestas et, ultrices bibendum ac
+            scelerisque. Risus porta volutpat congue imperdiet nulla commodo
+            lectus cum. Eu odio rhoncus nullam quam viverra quis a ultrices
+            vitae. Mauris dignissim commodo tincidunt sit purus magna lacus.
+            Sagittis, sit justo, quisque varius nam. Iaculis dui aliquet elit
+            nisl justo, sem. Scelerisque vulputate diam sed sit eget fusce leo
+            facilisi lectus. In platea mattis auctor nunc nisl velit est. Platea
+            nulla sem ornare cursus quisque augue scelerisque magna. Nunc, etiam
+            augue nisi duis purus quam id diam facilisis.
+          </p>
+          <p>
+            Tincidunt consequat, dictum tempor,bibendum gravida gravida.
+            Ultricies tortor pulvinar dignissim semper senectus. Tortor sed
+            neque faucibus ipsum erat. Quis tristique cursus egestas senectus
+            penatibus nunc, semper. Amet massa eleifend donec ac duis. Velit
+            enim rhoncus pulvinar non. Tincidunt ultricies tempor imperdiet
+            odio.
+          </p>
+
+          <p>
+            Bibendum gravida gravida. Ultricies tortor pulvinar dignissim semper
+            senectus. Tortor sed neque faucibus ipsum erat. Quis tristique
+            cursus egestas senectus penatibus nunc, semper. Amet massa eleifend
+            donec ac duis. Velit enim rhoncus pulvinar non. Tincidunt ultricies
+            tempor imperdiet odio.
+          </p>
+          <h3>2. Dictum tempor, bibendum gravida gravida</h3>
+          <p>
+            Justo, quisque varius nam. Iaculis dui aliquet elit nisl justo, sem.
+            Scelerisque vulputate diam sed sit eget fusce leo facilisi lectus.
+            In platea mattis auctor nunc nisl velit est. Platea nulla sem ornare
+            cursus quisque augue scelerisque magna. Nunc, etiam augue nisi duis
+            purus quam id diam facilisis.
+          </p>
+          <p>
+            Tincidunt consequat, dictum tempor, bibendum gravida gravida.
+            Ultricies tortor pulvinar dignissim semper senectus. Tortor sed
+            neque faucibus ipsum erat. Quis tristique cursus egestas senectus
+            penatibus nunc, semper. Amet massa eleifend donec ac duis. Velit
+            enim rhoncus pulvinar non. Tincidunt ultricies tempor imperdiet
+            odio.
+          </p>
+        </div>
+      </div>
+    </main>
+
+    <footer>
+      <div class="footer-main">
+        <div class="container">
+          <h1>Nhà thuốc 3T</h1>
+          <div class="footer-main__wrap">
+            <div class="footer-main__information">
+              <div class="footer-main__location">
+                <a href="https://goo.gl/maps/BTJQz58yFjP97zkK7"
+                  ><img
+                    src="./img/svg/location.svg"
+                    target="_blank"
+                    alt="location of building"
+                  />
+                  <p>
+                    Trụ sở: Tầng 11, toà Zen Tower, Số 12, Khuất Duy Tiến,
+                    P.Thanh Xuân Trung, Thanh Xuân, Hà Nội
+                  </p>
+                </a>
+                <a href="mailto:nhathuoc3T@gmail.com"
+                  ><img src="./img/svg/gmailloca.svg" alt="gmail send" />
+                  <p>nhathuoc3T@gmail.com</p>
+                </a>
+              </div>
+              <div class="line-inside"></div>
+              <div class="footer-main__check">
+                <h3>Chứng nhận</h3>
+                <div class="footer-main__authetic">
+                  <img
+                    src="./img/bocongthuongcheck.png"
+                    alt="Bo cong thuong check"
+                  />
+                  <img src="./img/dmcacheck.png" alt="dcma check" />
+                </div>
+              </div>
+            </div>
+            <div class="footer-main__menunav">
+              <h3>Tìm hiểu thêm</h3>
+              <p>Giới thiệu</p>
+              <p>Chính sách đổi trả và giao hàng</p>
+            </div>
+            <div class="footer-main__menunav">
+              <h3>Danh mục</h3>
+              <p>Thực phẩm chức năng</p>
+              <p>Dược mỹ phẩm</p>
+              <p>Chăm sóc cá nhân</p>
+              <p>Thuốc</p>
+              <p>Thiết bị y tế</p>
+              <p>Bản tin sức khoẻ</p>
+            </div>
+            <div class="footer-main__social">
+              <div class="calltome">
+                <img src="./img/social-media/telefon.png" alt="telephone" />
+                <div class="footer-main__social--title">
+                  <p>Tư vấn mua hàng(miễn phí)</p>
+                  <h2>0939 129 889</h2>
+                </div>
+              </div>
+              <div class="social-internet">
+                <img src="./img/social-media/facebook.png" alt="facebook" />
+                <img src="./img/social-media/utube.png" alt="youtube" />
+                <img src="./img/social-media/Group 1609.png" alt="zalo" />
+                <img
+                  src="./img/social-media/gmail-footer.png"
+                  alt="gmail footer"
+                />
+              </div>
+            </div>
+          </div>
+          <p class="circlefooterleft">
+            <img src="./img/circlefooter.png" alt="circlefooter" />
+          </p>
+          <p class="circlefooterright">
+            <img src="./img/circlefooter2.png" alt="circlefooter2" />
+          </p>
+        </div>
+      </div>
+
+      <div class="footer-after">
+        <div class="container">
+          <p>Design by GCO Software <span id="date">2022</span></p>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

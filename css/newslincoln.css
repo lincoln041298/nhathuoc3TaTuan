@@ -9258,12 +9258,14 @@ input[type=submit] {
   .breadcrumb__text {
     font-weight: 400;
     font-size: 13px;
-    line-height: 20px;
-    display: -webkit-box;
-    max-width: 200px;
-    -webkit-line-clamp: 1;
-    -webkit-box-orient: vertical;
-    overflow: hidden; }
+    line-height: 20px; }
+    @media screen and (max-width: 992px) {
+      .breadcrumb__text {
+        display: -webkit-box;
+        max-width: 200px;
+        -webkit-line-clamp: 1;
+        -webkit-box-orient: vertical;
+        overflow: hidden; } }
     .breadcrumb__text a {
       text-decoration: none;
       color: var(--color-grey-dark-0); }
@@ -11815,6 +11817,35 @@ button {
     font-size: 15px;
     line-height: 26px;
     margin-right: 16px; }
+
+.polixy {
+  margin-bottom: 100px; }
+  .polixy h1, .polixy .h1, .polixy h2, .polixy .h2, .polixy h3, .polixy .h3, .polixy p {
+    margin-bottom: 0; }
+  .polixy h1, .polixy .h1 {
+    font-weight: 700;
+    font-size: 28px;
+    line-height: 34px;
+    text-transform: uppercase;
+    margin-bottom: 45.44px; }
+  .polixy h2, .polixy .h2 {
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 32px;
+    margin-top: 24px; }
+  .polixy h3, .polixy .h3 {
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 24px;
+    margin: 16px 0; }
+  .polixy p {
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 28px; }
+    .polixy p:nth-of-type(3) {
+      margin-top: 16px; }
+    .polixy p:nth-of-type(8) {
+      margin-top: 16px; }
 
 .margin-60 {
   margin-bottom: 6rem; }

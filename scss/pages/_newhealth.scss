@@ -590,7 +590,7 @@
         background-color: #e0e0e0;
         border-radius: 50%;
         @include maxWidth(373px) {
-         display: none;
+          display: none;
         }
       }
       .thinking-ask {
@@ -605,7 +605,7 @@
         background-color: #e0e0e0;
         @include maxWidth(373px) {
           display: none;
-         }
+        }
       }
     }
   }
@@ -669,4 +669,41 @@
 }
 
 @include minWidth(576px) {
+}
+
+.polixy {
+  margin-bottom: 100px;
+  h1, h2, h3, p {
+    margin-bottom: 0;
+  }
+  h1 {
+    font-weight: 700;
+    font-size: 28px;
+    line-height: 34px;
+    text-transform: uppercase;
+    margin-bottom: 45.44px;
+  }
+  h2 {
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 32px;
+    margin-top: 24px;
+  }
+  h3 {
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 24px;
+    margin: 16px 0;
+  }
+  p {
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 28px;
+    &:nth-of-type(3) {
+      margin-top: 16px;
+    }
+    &:nth-of-type(8) {
+      margin-top: 16px;
+    }
+  }
 }
