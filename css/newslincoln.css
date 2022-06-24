@@ -11270,11 +11270,130 @@ button {
   -webkit-animation-name: fadeInUp;
   animation-name: fadeInUp; }
 
-.health__overview {
+.readnewabouthealth p {
+  margin-bottom: 0; }
+
+.readnewabouthealth h1, .readnewabouthealth .h1,
+.readnewabouthealth h2,
+.readnewabouthealth .h2,
+.readnewabouthealth h3,
+.readnewabouthealth .h3,
+.readnewabouthealth h4,
+.readnewabouthealth .h4 {
+  margin-bottom: 0; }
+
+.readnewabouthealth .health__overview {
   display: flex; }
 
-.health__news {
-  flex: 0 0 78%; }
+.readnewabouthealth .health__news {
+  flex: 0 0 75%; }
+
+.readnewabouthealth .newhealth__biginfor {
+  position: relative; }
+
+.readnewabouthealth .newhealth__img {
+  border-radius: 0px 0px 10px 10px; }
+  .readnewabouthealth .newhealth__img::before {
+    content: "";
+    position: absolute;
+    height: 119px;
+    width: 100%;
+    backdrop-filter: blur(20px);
+    background: rgba(255, 255, 255, 0.6);
+    bottom: 0;
+    border-radius: 0px 0px 10px 10px; }
+
+.readnewabouthealth .newhealth__question {
+  font-weight: 500;
+  font-size: 22px;
+  line-height: 32px; }
+
+.readnewabouthealth .newhealth__title {
+  position: absolute;
+  bottom: 0;
+  height: 119px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 20px 0;
+  padding-left: 20px; }
+
+.readnewabouthealth .newhealth__dayandtime {
+  display: flex;
+  align-items: center;
+  justify-content: start;
+  padding-left: 15px; }
+  .readnewabouthealth .newhealth__dayandtime .fillter-inside {
+    width: 140px;
+    height: 39px;
+    position: absolute;
+    background: rgba(255, 255, 255, 0.5);
+    border: 1px solid #ECE5E5;
+    backdrop-filter: blur(20px);
+    border-radius: 9999px;
+    top: 1.25rem;
+    left: 1.25rem; }
+  .readnewabouthealth .newhealth__dayandtime .day-year {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 19px;
+    color: var(--color-primary);
+    z-index: 1; }
+  .readnewabouthealth .newhealth__dayandtime .doc {
+    margin-left: 36px;
+    margin-right: 16px;
+    padding: 0.3rem;
+    background-color: #e0e0e0;
+    border-radius: 50%; }
+  .readnewabouthealth .newhealth__dayandtime .line {
+    margin: 0 1.6rem;
+    width: 0.1rem;
+    height: 1.7rem;
+    background-color: #e0e0e0; }
+  .readnewabouthealth .newhealth__dayandtime .thinking-ask {
+    display: flex;
+    align-items: center;
+    margin-right: 8.25px; }
+  .readnewabouthealth .newhealth__dayandtime .control-admin {
+    font-weight: 300;
+    font-size: 13px;
+    line-height: 20px; }
+
+.readnewabouthealth .news-solution {
+  margin-top: 48px;
+  max-height: 227px;
+  display: flex;
+  flex-direction: column;
+  row-gap: 48px; }
+  .readnewabouthealth .news-solution .solution__coverimg img {
+    height: 100%; }
+  .readnewabouthealth .news-solution .solution__givebestchoice {
+    display: flex; }
+  .readnewabouthealth .news-solution .solution__tag {
+    padding: 24px; }
+  .readnewabouthealth .news-solution .solution__dateoftime {
+    display: flex;
+    justify-content: space-between;
+    align-items: center; }
+  .readnewabouthealth .news-solution .solution__upload {
+    display: flex;
+    align-items: center; }
+    .readnewabouthealth .news-solution .solution__upload .line {
+      margin: 0 1.6rem;
+      width: 0.1rem;
+      height: 1.7rem;
+      background-color: #e0e0e0; }
+    .readnewabouthealth .news-solution .solution__upload .thinking-ask {
+      display: flex;
+      align-items: center;
+      margin-right: 8.25px; }
+  .readnewabouthealth .news-solution .solution__title {
+    margin-top: 16px;
+    margin-bottom: 12px; }
+  .readnewabouthealth .news-solution .solution__content {
+    font-weight: 300;
+    font-size: 15px;
+    line-height: 24px; }
 
 .margin-60 {
   margin-bottom: 6rem; }
