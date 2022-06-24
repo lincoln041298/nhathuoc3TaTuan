@@ -1,7 +1,7 @@
 .breadcrumb {
-    margin-top: 24px;
-    margin-bottom: 32px;
-    padding-left: 15px;
+  margin-top: 24px;
+  margin-bottom: 32px;
+  padding-left: 15px;
   &__information {
     display: flex;
     align-items: center;
@@ -11,13 +11,17 @@
     font-weight: 400;
     font-size: 13px;
     line-height: 20px;
-
+    display: -webkit-box;
+    max-width: 200px;
+    -webkit-line-clamp: 1;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
     a {
-        text-decoration: none;
-        color: var(--color-grey-dark-0);
-        &:hover {
-            color: var(--color-primary);
-        }
+      text-decoration: none;
+      color: var(--color-grey-dark-0);
+      &:hover {
+        color: var(--color-primary);
+      }
     }
   }
 

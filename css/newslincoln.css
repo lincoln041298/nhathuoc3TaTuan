@@ -9258,7 +9258,12 @@ input[type=submit] {
   .breadcrumb__text {
     font-weight: 400;
     font-size: 13px;
-    line-height: 20px; }
+    line-height: 20px;
+    display: -webkit-box;
+    max-width: 200px;
+    -webkit-line-clamp: 1;
+    -webkit-box-orient: vertical;
+    overflow: hidden; }
     .breadcrumb__text a {
       text-decoration: none;
       color: var(--color-grey-dark-0); }
@@ -11612,6 +11617,8 @@ button {
   font-weight: 500;
   font-size: 14px;
   line-height: 19px; }
+  .readnewabouthealth .sidebar__menu--infor a:hover {
+    color: var(--color-primary); }
 
 .readnewabouthealth .sidebar__outstanding {
   margin-top: 40px; }
@@ -11722,6 +11729,88 @@ button {
   @media screen and (min-width: 250px) {
     .readnewabouthealth .line-bottom {
       display: none; } }
+
+.readnewabouthealth .newinf__title {
+  margin-top: 20px; }
+
+.readnewabouthealth .newinf__dayandtime {
+  display: flex;
+  align-items: center; }
+  @media screen and (max-width: 373px) {
+    .readnewabouthealth .newinf__dayandtime {
+      flex-direction: column; } }
+  .readnewabouthealth .newinf__dayandtime .day-year {
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 19px;
+    color: var(--color-primary);
+    padding: 10px 20px;
+    border-radius: 9999px;
+    border: 1px solid #ece5e5; }
+    @media screen and (max-width: 576px) {
+      .readnewabouthealth .newinf__dayandtime .day-year {
+        font-size: 10px;
+        line-height: 17px;
+        padding: 8px 18px; } }
+  .readnewabouthealth .newinf__dayandtime .control-admin {
+    font-weight: 400;
+    font-size: 13px;
+    line-height: 20px; }
+    @media screen and (max-width: 576px) {
+      .readnewabouthealth .newinf__dayandtime .control-admin {
+        font-size: 9px;
+        line-height: 17px; } }
+  .readnewabouthealth .newinf__dayandtime .doc {
+    margin-left: 16px;
+    margin-right: 16px;
+    padding: 0.3rem;
+    background-color: #e0e0e0;
+    border-radius: 50%; }
+    @media screen and (max-width: 373px) {
+      .readnewabouthealth .newinf__dayandtime .doc {
+        display: none; } }
+  .readnewabouthealth .newinf__dayandtime .thinking-ask {
+    display: flex;
+    align-items: center;
+    margin-right: 8.25px; }
+  .readnewabouthealth .newinf__dayandtime .line {
+    margin: 0 1.6rem;
+    width: 0.1rem;
+    height: 1.7rem;
+    background-color: #e0e0e0; }
+    @media screen and (max-width: 373px) {
+      .readnewabouthealth .newinf__dayandtime .line {
+        display: none; } }
+
+.readnewabouthealth .big-content-intro h2, .readnewabouthealth .big-content-intro .h2 {
+  margin: 27px 0;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 32px; }
+
+.readnewabouthealth .big-content-intro p {
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 24px; }
+  .readnewabouthealth .big-content-intro p:nth-of-type(4) {
+    margin: 20px 0; }
+  .readnewabouthealth .big-content-intro p:nth-of-type(6) {
+    margin: 20px 0; }
+
+.readnewabouthealth .big-content-intro img {
+  margin-top: 24px; }
+
+.readnewabouthealth .social-media {
+  display: flex;
+  align-items: center;
+  justify-content: start;
+  margin-top: 32px;
+  margin-bottom: 100px; }
+  .readnewabouthealth .social-media p {
+    font-weight: 500;
+    font-size: 15px;
+    line-height: 26px;
+    margin-right: 16px; }
 
 .margin-60 {
   margin-bottom: 6rem; }

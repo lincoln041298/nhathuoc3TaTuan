@@ -414,6 +414,10 @@
           font-weight: 500;
           font-size: 14px;
           line-height: 19px;
+
+          &:hover {
+            color: var(--color-primary);
+          }
         }
       }
     }
@@ -543,6 +547,106 @@
     margin: 20px 0;
     @include minWidth(250px) {
       display: none;
+    }
+  }
+  .newinf {
+    &__title {
+      margin-top: 20px;
+    }
+
+    &__dayandtime {
+      display: flex;
+      align-items: center;
+      @include maxWidth(373px) {
+        flex-direction: column;
+      }
+      .day-year {
+        font-weight: 500;
+        font-size: 14px;
+        line-height: 19px;
+        color: var(--color-primary);
+        padding: 10px 20px;
+        border-radius: 9999px;
+        border: 1px solid #ece5e5;
+        @include maxWidth(576px) {
+          font-size: 10px;
+          line-height: 17px;
+          padding: 8px 18px;
+        }
+      }
+      .control-admin {
+        font-weight: 400;
+        font-size: 13px;
+        line-height: 20px;
+        @include maxWidth(576px) {
+          font-size: 9px;
+          line-height: 17px;
+        }
+      }
+      .doc {
+        margin-left: 16px;
+        margin-right: 16px;
+        padding: 0.3rem;
+        background-color: #e0e0e0;
+        border-radius: 50%;
+        @include maxWidth(373px) {
+         display: none;
+        }
+      }
+      .thinking-ask {
+        display: flex;
+        align-items: center;
+        margin-right: 8.25px;
+      }
+      .line {
+        margin: 0 1.6rem;
+        width: 0.1rem;
+        height: 1.7rem;
+        background-color: #e0e0e0;
+        @include maxWidth(373px) {
+          display: none;
+         }
+      }
+    }
+  }
+
+  .big-content-intro {
+    h2 {
+      margin: 27px 0;
+      font-weight: 700;
+      font-size: 24px;
+      line-height: 32px;
+    }
+    p {
+      font-weight: 400;
+      font-size: 15px;
+      line-height: 24px;
+
+      &:nth-of-type(4) {
+        margin: 20px 0;
+      }
+      &:nth-of-type(6) {
+        margin: 20px 0;
+      }
+    }
+
+    img {
+      margin-top: 24px;
+    }
+  }
+
+  .social-media {
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    margin-top: 32px;
+    margin-bottom: 100px;
+
+    p {
+      font-weight: 500;
+      font-size: 15px;
+      line-height: 26px;
+      margin-right: 16px;
     }
   }
 }
