@@ -11317,6 +11317,11 @@ button {
 
 .readnewabouthealth .health__news {
   flex: 0 0 75%; }
+  .readnewabouthealth .health__news .nutrition {
+    text-transform: uppercase;
+    font-weight: 700;
+    font-size: 28px;
+    line-height: 34px; }
 
 .readnewabouthealth .newhealth__biginfor {
   position: relative; }
@@ -11441,6 +11446,9 @@ button {
   row-gap: 48px; }
   .readnewabouthealth .news-solution .solution__coverimg img {
     height: 100%; }
+    @media screen and (max-width: 576px) {
+      .readnewabouthealth .news-solution .solution__coverimg img {
+        width: 100%; } }
   .readnewabouthealth .news-solution .solution__givebestchoice {
     display: flex;
     background-color: var(--color-grey-light-3);

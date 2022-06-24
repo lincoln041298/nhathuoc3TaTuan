@@ -53,6 +53,13 @@
 
     &__news {
       flex: 0 0 75%;
+
+      .nutrition {
+        text-transform: uppercase;
+        font-weight: 700;
+        font-size: 28px;
+        line-height: 34px;
+      }
     }
   }
 
@@ -205,6 +212,9 @@
       &__coverimg {
         img {
           height: 100%;
+          @include maxWidth(576px) {
+            width: 100%;
+          }
         }
       }
 
